@@ -9,7 +9,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import axios from "axios";
-import { router } from "next/client";
+import { useRouter } from "next/router";
+
 import user from "@/data/users/login.json";
 function Write() {
   let [title, setTitle] = useState("");
@@ -17,6 +18,7 @@ function Write() {
   let [time, setTime] = useState("");
   let [link, setLink] = useState("");
   let [error, setError] = useState("");
+  const router = useRouter();
 
   const onWrite = async () => {
     try {
