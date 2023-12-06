@@ -22,6 +22,12 @@ function Write() {
 
   const onWrite = async () => {
     try {
+      // Input validation
+      if (!title || !description || !time || !link) {
+        setError("All fields are required");
+        return;
+      }
+
       const today = new Date();
       const year = today.getFullYear();
       const month = today.getMonth() + 1;
@@ -38,14 +44,17 @@ function Write() {
         date: dateString,
         avatar: "https://source.unsplash.com/random/800x600/?user",
       });
-      res?.data.newsItem
-        ? router.push("/")
-        : setError("Double check and try again");
+
+      if (res?.data.newsItem) {
+        router.push("/");
+      } else {
+        setError("Double-check and try again");
+      }
     } catch (error) {
       console.error("Error publishing article:", error);
+      setError("An error occurred. Please try again later.");
     }
   };
-
   return (
     <Container maxW={"1280px"} m={"0 auto"}>
       <Heading fontSize={"32px"}>Add Article</Heading>
