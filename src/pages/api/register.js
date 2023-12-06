@@ -2,7 +2,11 @@ import { promises as fsPromises } from "fs";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
 
-const LoginFilePath = path.resolve(process.cwd(), "src/data/users/login.json");
+const LoginFilePath = path.resolve(
+  process.cwd(),
+  "src/data/users/registered.json",
+);
+const LoginFilePath2 = path.resolve(process.cwd(), "src/data/users/login.json");
 
 const readLoginFile = async () => {
   try {
@@ -33,7 +37,10 @@ export default async function getNews(req, res) {
 
       const LoginData = await readLoginFile();
       LoginData.unshift(newLoginItem);
-
+      await fsPromises.writeFile(
+        LoginFilePath2,
+        JSON.stringify(newLoginItem, null, 2),
+      );
       await writeLoginFile(LoginData);
 
       res.status(201).json({

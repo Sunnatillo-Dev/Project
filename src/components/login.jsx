@@ -19,29 +19,18 @@ import { ModalProvider } from "@/Context/Modal.context";
 import axios from "axios";
 import { RegisterProvider } from "@/Context/isRegistered";
 
-export default function Register() {
-  let { isOpen, setIsOpen } = useContext(ModalProvider);
-  let [firstName, setFirstName] = useState("");
-  let [lastName, setLastName] = useState("");
+export default function Login() {
+  let { isOpen, setIsOpen, LisOpen, setLIsOpen } = useContext(ModalProvider);
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [userName, setUserName] = useState("");
-  let { isRegister, setIsRegister } = useContext(RegisterProvider);
-  let onSignUp = () => {
+  let onSignIn = () => {
     try {
-      if (!firstName || !lastName || !email || !userName || !password) return;
-      axios
-        .post("api/register", {
-          fullName: firstName + " " + lastName,
-          email: email,
-          username: userName,
-          password: password,
-        })
-        .then((res) => {
-          console.log(res.data.message);
-          setIsRegister(res.data.message.length ? true : false);
-        });
-      setIsOpen(isRegister ? false : true);
+      if (!email || !userName || !password) return;
+      axios.get("api/login").then((res) => {
+        console.log(res.data);
+      });
+      setIsOpen(false);
     } catch (e) {}
   };
   return (
@@ -49,37 +38,18 @@ export default function Register() {
       <Modal
         isCentered
         size={"xl"}
-        isOpen={isOpen}
+        isOpen={LisOpen}
         onClose={() => {
-          isRegister ? setIsOpen(false) : setIsOpen(true);
+          setLIsOpen(false);
         }}
       >
         <ModalOverlay />
         <ModalContent>
           <ModalHeader my={"20px"} fontSize={"30px"} textAlign={"center"}>
-            Join Medium.
+            Welcome Back
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input
-                onChange={(e) => {
-                  setFirstName(e.target.value);
-                }}
-                placeholder="First name"
-              />
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input
-                onChange={(e) => {
-                  setLastName(e.target.value);
-                }}
-                placeholder="Last name"
-              />
-            </FormControl>
             <FormControl mt={4}>
               <FormLabel>Email</FormLabel>
               <Input
@@ -118,9 +88,9 @@ export default function Register() {
               color={"white"}
               _hover={{ background: "blackAlpha.700" }}
               mr={3}
-              onClick={onSignUp}
+              onClick={onSignIn}
             >
-              Sign Up
+              Sign In
             </Button>
           </ModalFooter>
         </ModalContent>

@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import userData from "@/data/users/login.json";
 
 import user from "@/data/users/login.json";
 function Write() {
@@ -22,19 +23,10 @@ function Write() {
 
   const onWrite = async () => {
     try {
-      // Input validation
-      if (
-        !title ||
-        !description ||
-        !time ||
-        !link ||
-        !link.includes("http://") ||
-        !link.includes("https://")
-      ) {
+      if (!title || !description || !time || !link) {
         setError("All fields are required and write all of them correctly");
         return;
       }
-
       const today = new Date();
       const year = today.getFullYear();
       const month = today.getMonth() + 1;
@@ -46,8 +38,22 @@ function Write() {
         title,
         description,
         readMinutes: time,
-        photo: link,
-        author: user[0].username,
+        photo:
+          link.includes("https://") ||
+          link.includes("http://") ||
+          link.includes("data:image")
+            ? link
+            : " https://source.unsplash.com/random/800x600/?" + link,
+        author:
+          userData?.fullName?.split(" ")[0][0].toUpperCase() +
+          userData?.fullName
+            ?.split(" ")[0]
+            .slice(0, userData.fullName.split(" ")[0].length) +
+          " " +
+          userData.fullName?.split(" ")[1][0].toUpperCase() +
+          userData.fullName
+            ?.split(" ")[1]
+            .slice(0, userData.fullName.split(" ")[0].length),
         date: dateString,
         avatar: "https://source.unsplash.com/random/800x600/?user",
       });
@@ -63,43 +69,77 @@ function Write() {
     }
   };
   return (
-    <Container maxW={"1280px"} m={"0 auto"}>
-      <Heading fontSize={"32px"}>Add Article</Heading>
-      <Flex align={"center"}>
-        <Text width={"300px"}> Title:</Text>
-        <Input
-          onChange={(e) => setTitle(e.target.value)}
-          width={"500px"}
-          type={"text"}
-        />
-      </Flex>{" "}
-      <Flex align={"center"}>
-        <Text width={"300px"}> Description:</Text>
-        <Input
-          onChange={(e) => setDescription(e.target.value)}
-          width={"500px"}
-          type={"text"}
-        />
-      </Flex>{" "}
-      <Flex align={"center"}>
-        <Text width={"300px"}> Reading Time (in Minutes):</Text>
-        <Input
-          onChange={(e) => setTime(e.target.value)}
-          width={"500px"}
-          type={"number"}
-        />
-      </Flex>
-      <Flex align={"center"}>
-        <Text width={"300px"}> Photo (link):</Text>
-        <Input
-          onChange={(e) => setLink(e.target.value)}
-          width={"500px"}
-          type={"text"}
-        />
-      </Flex>
-      <Text>{error}</Text>
-      <Button onClick={onWrite}>Publish</Button>
-    </Container>
+    <>
+      <Heading my={"30px"} textAlign={"center"} fontSize={"32px"}>
+        Add Article
+      </Heading>
+      <Container
+        alignItems={"center"}
+        flexDir={"column"}
+        display={"flex"}
+        justifyContent={"center"}
+        maxW={"1280px"}
+        m={"0 auto"}
+        gap={"20px"}
+      >
+        <Flex align={"center"}>
+          <Input
+            onChange={(e) => setTitle(e.target.value)}
+            width={"500px"}
+            placeholder={"Title"}
+            variant={"unstyled"}
+            border={"1px solid black"}
+            height={"40px"}
+            padding={"5px 10px"}
+            type={"text"}
+            outline={"1px solid #385898"}
+          />
+        </Flex>{" "}
+        <Flex align={"center"}>
+          <Input
+            onChange={(e) => setDescription(e.target.value)}
+            width={"500px"}
+            variant={"unstyled"}
+            border={"1px solid black"}
+            height={"40px"}
+            padding={"5px 10px"}
+            placeholder={"Description"}
+            type={"text"}
+            outline={"1px solid #385898"}
+          />
+        </Flex>{" "}
+        <Flex align={"center"}>
+          <Input
+            onChange={(e) => setTime(e.target.value)}
+            width={"500px"}
+            placeholder={"Reading Time (in Minutes)"}
+            variant={"unstyled"}
+            border={"1px solid black"}
+            height={"40px"}
+            padding={"5px 10px"}
+            type={"number"}
+            outline={"1px solid #385898"}
+          />
+        </Flex>
+        <Flex align={"center"}>
+          <Input
+            onChange={(e) => setLink(e.target.value)}
+            width={"500px"}
+            variant={"unstyled"}
+            border={"1px solid black"}
+            height={"40px"}
+            placeholder={"Photo (link):"}
+            padding={"5px 10px"}
+            type={"text"}
+            outline={"1px solid #385898"}
+          />
+        </Flex>
+        <Text>{error}</Text>
+        <Button width={"200px"} colorScheme={"facebook"} onClick={onWrite}>
+          Publish
+        </Button>
+      </Container>
+    </>
   );
 }
 

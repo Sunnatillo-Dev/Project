@@ -1,16 +1,7 @@
-[
-  {
-    "fullName": " ",
-    "email": "",
-    "username": "",
-    "password": "",
-    "id": "34f7f20c-0ccd-4f05-99f1-787c257a317b"
-  },
-  {
-    "fullName": "Sunnatillo Ruzmetov",
-    "email": "email@example.com",
-    "username": "Sunnatillo-Dev",
-    "password": "SecurePassword123!",
-    "profilePicture": "url/to/your/profile/picture.jpg"
-  }
-]
+{
+  "fullName": "asdas dasd",
+  "email": "dasdadasd",
+  "username": "dadasdsda",
+  "password": "asda",
+  "id": "5144ae80-ddbc-4a36-8730-33fe54342252"
+}
