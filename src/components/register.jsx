@@ -28,14 +28,16 @@ export default function Register() {
 
   let onSignUp = () => {
     try {
+      if (!firstName || !lastName || !email || !userName || !password) return;
       axios
-        .post("http://localhost:3000/api/register", {
+        .post("api/register", {
           fullName: firstName + " " + lastName,
           email: email,
           username: userName,
           password: password,
         })
         .then((res) => console.log(res.data));
+      setIsOpen(false);
     } catch (e) {}
   };
   return (
@@ -48,11 +50,7 @@ export default function Register() {
           setIsOpen(false);
         }}
       >
-        <ModalOverlay
-          backdropFilter="auto"
-          backdropInvert="10%"
-          backdropBlur="1px"
-        />
+        <ModalOverlay />
         <ModalContent>
           <ModalHeader my={"20px"} fontSize={"30px"} textAlign={"center"}>
             Join Medium.

@@ -23,8 +23,15 @@ function Write() {
   const onWrite = async () => {
     try {
       // Input validation
-      if (!title || !description || !time || !link) {
-        setError("All fields are required");
+      if (
+        !title ||
+        !description ||
+        !time ||
+        !link ||
+        !link.includes("http://") ||
+        !link.includes("https://")
+      ) {
+        setError("All fields are required and write all of them correctly");
         return;
       }
 
