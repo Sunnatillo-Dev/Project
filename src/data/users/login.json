@@ -1,0 +1,45 @@
+[
+  {
+    "fullName": " ",
+    "email": "",
+    "username": "",
+    "password": "",
+    "dateOfBirth": "2008,11,17",
+    "profilePicture": "url/to/your/profile/picture.jpg",
+    "id": "a2efb1fc-1fe7-496f-941c-ecef2fb7b202"
+  },
+  {
+    "fullName": " ",
+    "email": "",
+    "username": "",
+    "password": "",
+    "dateOfBirth": "2008,11,17",
+    "profilePicture": "url/to/your/profile/picture.jpg",
+    "id": "b69c619b-2c02-47ee-987e-0d7afe42e1c7"
+  },
+  {
+    "fullName": " ",
+    "email": "",
+    "username": "",
+    "password": "",
+    "dateOfBirth": "2008,11,17",
+    "profilePicture": "url/to/your/profile/picture.jpg",
+    "id": "34629b05-26dc-4c60-9f04-d7cfdc3ab4be"
+  },
+  {
+    "fullName": " ",
+    "email": "",
+    "username": "",
+    "password": "",
+    "dateOfBirth": "2008,11,17",
+    "profilePicture": "url/to/your/profile/picture.jpg",
+    "id": "6e1d3cc0-4b59-4a60-9864-7cae6575ecf4"
+  },
+  {
+    "fullName": "Sunnatillo Ruzmetov",
+    "email": "email@example.com",
+    "username": "Sunnatillo-Dev",
+    "password": "SecurePassword123!",
+    "profilePicture": "url/to/your/profile/picture.jpg"
+  }
+]

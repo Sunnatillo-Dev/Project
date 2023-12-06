@@ -35,13 +35,13 @@ export default function AllNews() {
   }, []);
 
   return (
-    <Grid my={"10px"} gap={"43px"} templateColumns={"repeat(1,1fr)"}>
-      <InfiniteScroll
-        dataLength={data.length}
-        next={fetchData}
-        hasMore={hasMore}
-        loader={<Loader />}
-      >
+    <InfiniteScroll
+      dataLength={data.length}
+      next={fetchData}
+      hasMore={hasMore}
+      loader={<Loader />}
+    >
+      <Grid my={"20px"} gap={"30px"} templateColumns={"repeat(1,1fr)"}>
         {data?.slice(0, num).map((item) => {
           return (
             <SingleNew
@@ -57,7 +57,7 @@ export default function AllNews() {
             />
           );
         })}
-      </InfiniteScroll>
-    </Grid>
+      </Grid>
+    </InfiniteScroll>
   );
 }

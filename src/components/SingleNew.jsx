@@ -1,7 +1,15 @@
 import axios from "axios";
-import { Box, Grid, GridItem, Text, Image, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Text,
+  Button,
+  Image as ChakraImage,
+} from "@chakra-ui/react";
 import { CiCircleMinus } from "react-icons/ci";
 import { memo, useMemo } from "react";
+import Image from "next/image";
 
 function SingleNew({
   readMinutes,
@@ -21,14 +29,14 @@ function SingleNew({
       justifyContent={"space-between"}
       display={"flex"}
       alignItems={"center"}
+      pt={"20px"}
     >
       <Box width={"500px"}>
         <Box mb={"12px"} gap={"10px"} display={"flex"} alignItems={"center"}>
           <Image
-            objectFit={"cover"}
-            borderRadius={"50px"}
-            width={"24px"}
-            height={"24px"}
+            width={24}
+            style={{ borderRadius: "100%", height: "24px", objectFit: "cover" }}
+            height={24}
             src={avatar}
             alt={author}
           />
@@ -63,7 +71,6 @@ function SingleNew({
         </Box>
         <Box
           color="#242424"
-          fontFamily="Source Serif Pro"
           fontSize="16px"
           fontWeight="normal"
           lineHeight="24px"
@@ -132,7 +139,7 @@ function SingleNew({
           </Box>
         </Box>
       </Box>
-      <Image width={"112px"} height={"112px"} objectFit={"cover"} src={photo} />
+      <Image width={112} height={112} objectFit={"cover"} src={photo} />
     </GridItem>
   );
 }
