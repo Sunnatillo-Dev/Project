@@ -105,7 +105,6 @@ function Header() {
           background={"#ff00fb"}
           width="32px"
           height="32px"
-          display={"flex"}
           justifyContent={"center"}
           color={"white"}
           alignItems={"center"}
@@ -133,10 +132,10 @@ function Header() {
             _hover={{ background: "blackAlpha.800" }}
           >
             Get Started
+            <Register />
           </Button>
         </Flex>
       </Flex>
-      <Register />
       <Login />
     </Box>
   );

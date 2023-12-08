@@ -14,9 +14,10 @@ import {
   ModalOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ModalProvider } from "@/Context/Modal.context";
 import axios from "axios";
+import userData from "@/data/users/login.json";
 import { RegisterProvider } from "@/Context/isRegistered";
 
 export default function Register() {
@@ -27,6 +28,9 @@ export default function Register() {
   let [password, setPassword] = useState("");
   let [userName, setUserName] = useState("");
   let { isRegister, setIsRegister } = useContext(RegisterProvider);
+  useEffect(() => {
+    setIsOpen(!userData?.id);
+  }, []);
   let onSignUp = () => {
     try {
       if (!firstName || !lastName || !email || !userName || !password) return;
@@ -38,20 +42,18 @@ export default function Register() {
           password: password,
         })
         .then((res) => {
-          console.log(res.data.message);
-          setIsRegister(res.data.message.length ? true : false);
+          setIsOpen(res.status == 201 ? false : true);
         });
-      setIsOpen(isRegister ? false : true);
     } catch (e) {}
   };
   return (
-    <>
+    <Box display={"none !important"}>
       <Modal
         isCentered
         size={"xl"}
         isOpen={isOpen}
         onClose={() => {
-          isRegister ? setIsOpen(false) : setIsOpen(true);
+          setIsOpen(false);
         }}
       >
         <ModalOverlay />
@@ -125,6 +127,6 @@ export default function Register() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-    </>
+    </Box>
   );
 }
