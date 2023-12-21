@@ -6,24 +6,11 @@ import { IoSearch } from "react-icons/io5";
 import { TfiWrite } from "react-icons/tfi";
 import { TfiBell } from "react-icons/tfi";
 import { useRouter } from "next/router";
-import { ModalProvider } from "@/Context/Modal.context";
-import Register from "@/components/register";
-import { RegisterProvider } from "@/Context/isRegistered";
-import userData from "@/data/users/login.json";
-import Login from "@/components/login";
+import { UserButton, useUser } from "@clerk/nextjs";
 function Header() {
-  let { isOpen, setIsOpen, LisOpen, setLIsOpen } = useContext(ModalProvider);
-
-  let { isRegister, setIsRegister } = useContext(RegisterProvider);
-
   let router = useRouter();
-  let onRegister = () => {
-    setIsOpen(true);
-  };
-  let onLogin = () => {
-    setLIsOpen(true);
-    // router.push("/login");
-  };
+  let { user } = useUser();
+
   return (
     <Box
       px={"24px"}
@@ -31,6 +18,7 @@ function Header() {
       display={"flex"}
       justifyContent={"space-between"}
       borderBottom="1px solid #F2F2F2"
+      mb={"40px"}
     >
       <Flex gap={"20px"} align={"center"}>
         <Image
@@ -71,72 +59,66 @@ function Header() {
           color={"gray"}
           _hover={{ color: "rgba(0,0,0,0.8)" }}
           onClick={() => router.push("/write")}
-          display={isRegister ? "block" : "none"}
+          display={"block"}
         >
-          <Button
-            leftIcon={<TfiWrite fontSize={"24px"} />}
-            align={"flex-end"}
+          {user && (
+            <Button
+              leftIcon={<TfiWrite fontSize={"24px"} />}
+              align={"flex-end"}
+              transition={"all 0.2s"}
+              _hover={{ color: "rgba(0,0,0,0.8)" }}
+              color={"gray"}
+              alignItems={"center"}
+              variant={"unstyled"}
+              fontFamily="Inter"
+              fontSize="16px"
+              fontStyle="normal"
+              fontWeight={400}
+              border={"none"}
+              display={"flex"}
+              background={"none"}
+            >
+              Write
+            </Button>
+          )}
+        </Flex>
+        <>
+          <Box
             transition={"all 0.2s"}
-            _hover={{ color: "rgba(0,0,0,0.8)" }}
             color={"gray"}
-            alignItems={"center"}
-            variant={"unstyled"}
-            fontFamily="Inter"
-            fontSize="16px"
-            fontStyle="normal"
-            fontWeight={400}
-            border={"none"}
-            display={isRegister ? "flex" : "none"}
-            background={"none"}
+            _hover={{ color: "rgba(0,0,0,0.8)" }}
           >
-            Write
-          </Button>
-        </Flex>
-        <Box
-          transition={"all 0.2s"}
-          color={"gray"}
-          _hover={{ color: "rgba(0,0,0,0.8)" }}
-        >
-          <TfiBell fontSize={"24px"} />
-        </Box>
-        <Box
-          display={isRegister ? "flex" : "none"}
-          borderRadius="50%"
-          background={"#ff00fb"}
-          width="32px"
-          height="32px"
-          justifyContent={"center"}
-          color={"white"}
-          alignItems={"center"}
-          boxShadow="inset 0px 0px 0px 1px rgba(0, 0, 0, 0.05)"
-          _hover={{ background: "#6b006b" }}
-          transition={"all 0.4s"}
-        >
-          {userData.fullName ? userData.fullName[0].toUpperCase() : ""}
-        </Box>
-        <Flex gap={"20px"}>
-          <Button
-            display={!isRegister ? "flex" : "none"}
-            onClick={onLogin}
-            variant={"unstyled"}
-          >
-            Sign In
-          </Button>
-          <Button
-            display={!isRegister ? "flex" : "none"}
-            onClick={isRegister ? onRegister : setIsOpen(true)}
-            color={"white"}
-            background={"black"}
-            borderRadius={"30px"}
-            padding={"10px 20px"}
-            _hover={{ background: "blackAlpha.800" }}
-          >
-            Get Started
-            <Register />
-          </Button>
-        </Flex>
+            <TfiBell fontSize={"24px"} />
+          </Box>
+        </>
+        {!user && (
+          <Flex gap={"20px"}>
+            <Button
+              display={"flex"}
+              onClick={() => {
+                router.push("/sign-in");
+              }}
+              variant={"unstyled"}
+            >
+              Sign In
+            </Button>
+            <Button
+              onClick={() => {
+                router.push("/sign-up");
+              }}
+              color={"white"}
+              background={"black"}
+              borderRadius={"30px"}
+              padding={"10px 20px"}
+              _hover={{ background: "blackAlpha.800" }}
+            >
+              Get Started
+            </Button>
+          </Flex>
+        )}
+
+        {user && <UserButton afterSignOutUrl="/" />}
       </Flex>
-      <Login />
     </Box>
   );
 }

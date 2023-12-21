@@ -1,5 +1,4 @@
 import { Container } from "@chakra-ui/react";
-import Home from "@/components/AllNews";
 import AllNews from "@/components/AllNews";
 export default function HomePage() {
   return (

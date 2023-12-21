@@ -1,14 +1,25 @@
 [
   {
-    "title": "aslkdasdlk",
-    "description": "as,mda,smdn",
+    "title": "asd",
+    "description": "asdas",
     "readMinutes": "11",
-    "photo": " https://source.unsplash.com/random/800x600/?link",
-    "author": "Sunnatillo Ruzmetov",
-    "date": "2023-12-22",
-    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJacmRnU0hvdGNZWmlMS1NxR0tqcEZVbVgwSCJ9",
-    "category": "tech",
-    "id": "822f2f27-1bf9-45ea-b97a-faa9ae73c61b"
+    "photo": " https://source.unsplash.com/random/800x600/?robot",
+    "author": "Aasd Aasd",
+    "date": "2023-12-12",
+    "avatar": "https://source.unsplash.com/random/800x600/?user",
+    "id": "03d22c2e-29b0-4511-991d-354a5f3a0ab3",
+    "category": "robot"
+  },
+  {
+    "title": "sadasd",
+    "description": "asd",
+    "readMinutes": "2",
+    "photo": " https://source.unsplash.com/random/800x600/?mac",
+    "author": "Aasdjkasdashd Aaksjhdaksdh",
+    "date": "2023-12-09",
+    "avatar": "https://source.unsplash.com/random/800x600/?user",
+    "id": "94ccf424-29da-4333-8ef8-cf16404159fb",
+    "category": "mac"
   },
   {
     "id": "f3dbeb1e-2969-40db-93ed-b82e253d101e",
@@ -32,7 +43,7 @@
     "comments": [],
     "photo": "https://source.unsplash.com/random/800x600/?cryptocurrency",
     "readMinutes": "8",
-    "category": "crypto"
+    "category": "cryptocurrency"
   },
   {
     "id": "26d360c6-e1ef-41e7-a515-42b97af4225e",
@@ -44,7 +55,7 @@
     "comments": [],
     "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy",
     "readMinutes": "50",
-    "category": "energy"
+    "category": "sustainableenergy"
   },
   {
     "id": "2726932d-570e-4271-99bf-dc668dd97bd6",
@@ -308,7 +319,7 @@
     "comments": [],
     "photo": "https://source.unsplash.com/random/800x600/?cryptocurrency",
     "readMinutes": "7",
-    "category": "crypto"
+    "category": "cryptocurrency"
   },
   {
     "id": "497c134f-a32a-4b0b-b21a-c70ae50b4670",
@@ -320,7 +331,7 @@
     "comments": [],
     "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy",
     "readMinutes": "51",
-    "category": "energy"
+    "category": "sustainableenergy"
   },
   {
     "id": "39dabef9-da87-4a88-af4a-d88bcc44e8b6",

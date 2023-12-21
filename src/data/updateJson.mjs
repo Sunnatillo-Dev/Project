@@ -1,53 +1,30 @@
-import fs from 'fs';
-import path from 'path';
-import { v4 as uuidv4 } from 'uuid';
-import News from './News.json' assert { type: 'json' };
+import fs from 'fs/promises';
 
-const dataFilePath = path.join(process.cwd(), 'data', 'News.json');
+async function processFile() {
+  try {
+    // Read the JSON file
+    const data = await fs.readFile('News.json', 'utf8');
 
-export default function handler(req, res) {
-  if (req.method === 'POST') {
-    // Parse incoming data
-    const { title, description, time, link } = req.body;
+    // Parse the JSON data
+    const yourList = JSON.parse(data);
 
-    // Validate data if needed
-
-    // Create a new article object
-    const newArticle = {
-      id: uuidv4(), // Use uuid library for unique ID
-      title,
-      description,
-      author: "YourName", // Set the author as needed
-      avatar: "https://your-avatar-url.com", // Set the avatar URL as needed
-      date: getCurrentDate(),
-      comments: [],
-      photo: link,
-      readMinutes: time.toString(),
-    };
-
-    // Add the new article to the existing data
-    News.push(newArticle);
-
-    // Save the updated data to the file
-    fs.writeFile(dataFilePath, JSON.stringify(News, null, 2), (err) => {
-      if (err) {
-        console.error('Error writing file:', err);
-        res.status(500).json({ error: 'Internal Server Error' });
-      } else {
-        // Respond with the updated data
-        res.status(200).json(News);
-      }
+    // Update the list
+    yourList.forEach(item => {
+      const photoUrlParts = item.photo.split('/?');
+      const category = photoUrlParts[photoUrlParts.length - 1];
+      item.category = category;
     });
-  } else {
-    res.status(405).end(); // Method Not Allowed
+
+    // Convert the updated data back to JSON
+    const updatedData = JSON.stringify(yourList, null, 2);
+
+    // Write the updated data to a new file
+    await fs.writeFile('updated-News.json', updatedData, 'utf8');
+    console.log('Data updated and saved to updated-News.json!');
+  } catch (error) {
+    console.error('Error:', error);
   }
 }
 
-// Function to get the current date in the format "YYYY-MM-DD"
-function getCurrentDate() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
-}
+// Run the function
+processFile();

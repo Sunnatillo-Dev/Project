@@ -10,20 +10,21 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useRouter } from "next/router";
-import userData from "@/data/users/login.json";
+import { useUser } from "@clerk/nextjs";
 
-import user from "@/data/users/login.json";
 function Write() {
+  let { user } = useUser();
   let [title, setTitle] = useState("");
   let [description, setDescription] = useState("");
   let [time, setTime] = useState("");
   let [link, setLink] = useState("");
+  let [category, setCategory] = useState("");
   let [error, setError] = useState("");
   const router = useRouter();
-
+  console.log(category);
   const onWrite = async () => {
     try {
-      if (!title || !description || !time || !link) {
+      if (!title || !description || !time || !link || !category) {
         setError("All fields are required and write all of them correctly");
         return;
       }
@@ -44,18 +45,11 @@ function Write() {
           link.includes("data:image")
             ? link
             : " https://source.unsplash.com/random/800x600/?" + link,
-        author:
-          userData?.fullName?.split(" ")[0][0].toUpperCase() +
-          userData?.fullName
-            ?.split(" ")[0]
-            .slice(0, userData.fullName.split(" ")[0].length) +
-          " " +
-          userData.fullName?.split(" ")[1][0].toUpperCase() +
-          userData.fullName
-            ?.split(" ")[1]
-            .slice(0, userData.fullName.split(" ")[0].length),
+        author: user.fullName,
+
         date: dateString,
-        avatar: "https://source.unsplash.com/random/800x600/?user",
+        avatar: user.imageUrl,
+        category,
       });
 
       if (res?.data.newsItem) {
@@ -133,6 +127,47 @@ function Write() {
             type={"text"}
             outline={"1px solid #385898"}
           />
+        </Flex>
+        <Flex align={"center"} flexDir="column">
+          <Text>Catigory:</Text>
+          <Box display={"flex"} gap={"30px"} my={"20px"} flexWrap={"wrap"}>
+            <Box>
+              <label htmlFor="future">Future & Modern</label>
+              <input
+                onClick={(e) => setCategory(e.target.id)}
+                id="future"
+                type="radio"
+                name="catigory"
+              />
+            </Box>
+            <Box>
+              <label htmlFor="tech">Technology</label>
+              <input
+                onClick={(e) => setCategory(e.target.id)}
+                name="catigory"
+                id="tech"
+                type="radio"
+              />
+            </Box>
+            <Box>
+              <label htmlFor="crypto">Crypto</label>
+              <input
+                name="catigory"
+                onClick={(e) => setCategory(e.target.id)}
+                id="crypto"
+                type="radio"
+              />
+            </Box>
+            <Box>
+              <label htmlFor="energy">Energy</label>
+              <input
+                name="catigory"
+                onClick={(e) => setCategory(e.target.id)}
+                id="energy"
+                type="radio"
+              />
+            </Box>
+          </Box>
         </Flex>
         <Text>{error}</Text>
         <Button width={"200px"} colorScheme={"facebook"} onClick={onWrite}>

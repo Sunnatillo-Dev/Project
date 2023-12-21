@@ -1,19 +1,19 @@
 import "@/styles/globals.css";
 import Layout from "@/layout";
 import { ChakraProvider } from "@chakra-ui/react";
-import ModalContext from "@/Context/Modal.context";
-import IsRegistered from "@/Context/isRegistered";
+import { ClerkProvider } from "@clerk/nextjs";
+import DynamicContext from "@/Context/dynamic";
 
 export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <IsRegistered>
-        <ModalContext>
+      <ClerkProvider>
+        <DynamicContext>
           <Layout>
             <Component {...pageProps} />
           </Layout>
-        </ModalContext>
-      </IsRegistered>
+        </DynamicContext>
+      </ClerkProvider>
     </ChakraProvider>
   );
 }
