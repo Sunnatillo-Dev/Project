@@ -1,10 +1,15 @@
-import { Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { SignIn } from "@clerk/nextjs";
+import React from "react";
+
 const SignInPage = () => {
   return (
-    <Flex height={"80vh"} alignItems={"center"} justify="center">
+    <>
+      <Box height={"100vh"} display={"flex"} justifyContent={"center"} alignItems={"center"}>
       <SignIn />
-    </Flex>
+      </Box> 
+    </>
   );
 };
+
 export default SignInPage;

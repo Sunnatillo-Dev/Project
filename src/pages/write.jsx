@@ -35,7 +35,7 @@ function Write() {
 
       const formattedDate = new Date(Date.UTC(year, month - 1, day, 0, 0, 0));
       const dateString = formattedDate.toISOString().split("T")[0];
-      const res = await axios.post("http://localhost:3000/api/newsapi", {
+      const res = await axios.post("api/newsapi", {
         title,
         description,
         readMinutes: time,
@@ -44,7 +44,7 @@ function Write() {
           link.includes("http://") ||
           link.includes("data:image")
             ? link
-            : " https://source.unsplash.com/random/800x600/?" + link,
+            : " https://source.unsplash.com/random/?" + link,
         author: user.fullName,
 
         date: dateString,
@@ -64,7 +64,7 @@ function Write() {
   };
   return (
     <>
-      <Heading my={"30px"} textAlign={"center"} fontSize={"32px"}>
+      <Heading pt={"100px"} pb={"30px"} textAlign={"center"} fontSize={"32px"}>
         Add Article
       </Heading>
       <Container
@@ -164,6 +164,15 @@ function Write() {
                 name="catigory"
                 onClick={(e) => setCategory(e.target.id)}
                 id="energy"
+                type="radio"
+              />
+            </Box>
+            <Box>
+              <label htmlFor="other">Other</label>
+              <input
+                name="catigory"
+                onClick={(e) => setCategory(e.target.id)}
+                id="other"
                 type="radio"
               />
             </Box>

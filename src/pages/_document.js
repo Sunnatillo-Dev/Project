@@ -16,7 +16,11 @@ export default function Document() {
         />
         <title>Medium</title>
       </Head>
-      <body style={{ fontFamily: "Inter" }} marginwidth={0} marginheight={0}>
+      <body
+        style={{ fontFamily: "Inter" }}
+        marginwidth={0}
+        marginheight={0}
+      >
         <Main />
         <NextScript />
       </body>

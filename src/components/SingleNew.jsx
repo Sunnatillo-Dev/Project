@@ -13,6 +13,7 @@ import Image from "next/image";
 import NewsDataFromJson from "@/data/News.json";
 import { DynamicProvider } from "@/Context/dynamic";
 import { useRouter } from "next/router";
+import { useUser } from "@clerk/nextjs";
 function SingleNew({
   readMinutes,
   avatar,
@@ -39,6 +40,7 @@ function SingleNew({
     );
     router.push("/new");
   };
+  let { user } = useUser();
   return (
     <GridItem
       key={id}
@@ -138,6 +140,11 @@ function SingleNew({
               border={"none"}
               opacity={0.7}
               _hover={{ opacity: 1 }}
+              onClick={
+                user
+                  ? () => console.log("vaqtinchalik ishlayapti")
+                  : () => router.push("/sign-in")
+              }
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +164,11 @@ function SingleNew({
               background={"none"}
               border={"none"}
               opacity={0.5}
+              onClick={
+                user
+                  ? () => console.log("vaqtinchalik ishlayapti")
+                  : () => router.push("/sign-in")
+              }
               _hover={{ opacity: 0.8 }}
             >
               <CiCircleMinus fontSize={24} />

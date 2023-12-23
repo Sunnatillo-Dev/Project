@@ -1,24 +1,52 @@
-import React, { useContext } from "react";
-import { Box, Button, Flex, Input } from "@chakra-ui/react";
+import React, { useContext, useEffect } from "react";
 import Image from "next/image";
 import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
 import { TfiWrite } from "react-icons/tfi";
 import { TfiBell } from "react-icons/tfi";
 import { useRouter } from "next/router";
-import { UserButton, useUser } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
+import { Box, Button, Flex, Input } from "@chakra-ui/react";
+import { DynamicProvider } from "@/Context/dynamic";
+// import { Box } from "@chakra-ui/react";
+
 function Header() {
   let router = useRouter();
   let { user } = useUser();
+  let { scrollY, setScrollY } = useContext(DynamicProvider);
+  //
+  const scrollH = () => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => {
+        setScrollY(window.scrollY);
+        console.log(window.scrollY);
+      });
+    }
+  };
 
+  useEffect(() => {
+    scrollH();
+  }, []);
+
+  //
   return (
     <Box
+      boxShadow={
+        " -webkit-box-shadow: 0px 9px 22px -16px rgba(34, 60, 80, 0.18); -moz-box-shadow: 0px 9px 22px -16px rgba(34, 60, 80, 0.18); box-shadow: 0px 9px 22px -16px rgba(34, 60, 80, 0.18);"
+      }
+      position={"fixed"}
+      width={"100%"}
       px={"24px"}
       height={"60px"}
       display={"flex"}
       justifyContent={"space-between"}
-      borderBottom="1px solid #F2F2F2"
-      mb={"40px"}
+      transition={"all 0.5s"}
+      borderBottom={user ? "1px solid #F2F2F2" : "1px solid black"}
+      mb={user ? "40px" : "0px"}
+      zIndex={5}
+      backgroundColor={
+        !user && !(scrollY >= 400) && router.asPath == "/" ? "#FFC017" : "white"
+      }
     >
       <Flex gap={"20px"} align={"center"}>
         <Image
@@ -38,12 +66,19 @@ function Header() {
           boxSizing={"border-box"}
           align={"center"}
           gap={"10px"}
+          transition={"all 0.5s"}
+          border={!user ? "2px solid black  " : "auto"}
+          backgroundColor={
+            !user && !(scrollY >= 400) && router.asPath == "/"
+              ? "#FFC017"
+              : "white"
+          }
         >
           <IoSearch color={"gray"} fontSize={"25px"} />
           <Input
             variant={"unstyled"}
             background={"none"}
-            height={"100%"}
+            height={"40px"}
             border={"none"}
             outline={"none"}
             placeholder={"Search"}
@@ -82,18 +117,9 @@ function Header() {
             </Button>
           )}
         </Flex>
-        <>
-          <Box
-            transition={"all 0.2s"}
-            color={"gray"}
-            _hover={{ color: "rgba(0,0,0,0.8)" }}
-          >
-            <TfiBell fontSize={"24px"} />
-          </Box>
-        </>
         {!user && (
           <Flex gap={"20px"}>
-            <Button
+            {/* <Button
               display={"flex"}
               onClick={() => {
                 router.push("/sign-in");
@@ -101,8 +127,22 @@ function Header() {
               variant={"unstyled"}
             >
               Sign In
-            </Button>
-            <Button
+            </Button> */}
+            <SignInButton redirectUrl="/sign-in" style={{ display: "flex", alignItems: "center" }}>
+              Sign In
+            </SignInButton>
+            <SignUpButton
+              style={{
+                color: "white",
+                background: "black",
+                borderRadius: "30px",
+                padding: "10px 20px",
+                ":hover": { color: "red" },
+              }}
+            >
+              Get Started
+            </SignUpButton>
+            {/* <Button
               onClick={() => {
                 router.push("/sign-up");
               }}
@@ -113,7 +153,7 @@ function Header() {
               _hover={{ background: "blackAlpha.800" }}
             >
               Get Started
-            </Button>
+            </Button> */}
           </Flex>
         )}
 
