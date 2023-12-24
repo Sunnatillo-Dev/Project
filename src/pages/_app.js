@@ -6,10 +6,12 @@ import { ClerkProvider, useUser } from "@clerk/nextjs";
 import DynamicContext from "@/Context/dynamic";
 
 export default function App({ Component, pageProps }) {
- 
   return (
     <ChakraProvider>
-      <ClerkProvider {...pageProps}>
+      <ClerkProvider
+        {...pageProps}
+        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      >
         <DynamicContext>
           <Layout>
             <Component {...pageProps} />
