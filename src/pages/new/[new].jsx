@@ -19,7 +19,7 @@ const New = () => {
   useEffect(() => {
     let getData = async () => {
       setNewsData(
-        NewsDataFromJson.filter((item) => {
+        await NewsDataFromJson.filter((item) => {
           return item.id == router.query.new;
         })
       );

@@ -10,7 +10,9 @@ export default function App({ Component, pageProps }) {
     <ChakraProvider>
       <ClerkProvider
         {...pageProps}
-        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+        publishableKey={
+          "pk_test_dWx0aW1hdGUtbGFkeWJ1Zy00Ni5jbGVyay5hY2NvdW50cy5kZXYk"
+        }
       >
         <DynamicContext>
           <Layout>

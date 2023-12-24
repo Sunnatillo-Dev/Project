@@ -9,17 +9,18 @@ import { CiCircleMinus } from "react-icons/ci";
 import NewsDataFromJson from "@/data/News.json";
 
 const Search = () => {
-  let { query, reload, push } = useRouter();
+  let { query, push } = useRouter();
   let [searchRes, setSearchRes] = useState([]);
   let [data, setData] = useState([]);
   let { user } = useUser();
   let getData = async () => {
     await axios.get("/api/newsapi").then((res) => setData(res.data));
   };
-  let { setNewsData } = useContext(DynamicProvider);
+  // let { setNewsData } = useContext(DynamicProvider);
   let getNewsData = (id) => {
     push(`/new/${id}`);
   };
+  console.log(query.keyword);
   useEffect(() => {
     setSearchRes(
       data.filter((SingleNew) => {
