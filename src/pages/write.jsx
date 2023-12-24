@@ -7,6 +7,7 @@ import {
   Heading,
   Input,
   Text,
+  Textarea,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -17,11 +18,12 @@ function Write() {
   let [title, setTitle] = useState("");
   let [description, setDescription] = useState("");
   let [time, setTime] = useState("");
+  let [article, setArticle] = useState(``);
   let [link, setLink] = useState("");
   let [category, setCategory] = useState("");
+  let [otherCategory, setOtherCategory] = useState();
   let [error, setError] = useState("");
   const router = useRouter();
-  console.log(category);
   const onWrite = async () => {
     try {
       if (!title || !description || !time || !link || !category) {
@@ -49,7 +51,8 @@ function Write() {
 
         date: dateString,
         avatar: user.imageUrl,
-        category,
+        category: category == "other" && otherCategory,
+        article,
       });
 
       if (res?.data.newsItem) {
@@ -64,7 +67,7 @@ function Write() {
   };
   return (
     <>
-      <Heading pt={"100px"} pb={"30px"} textAlign={"center"} fontSize={"32px"}>
+      <Heading pt={"80px"} pb={"30px"} textAlign={"center"} fontSize={"32px"}>
         Add Article
       </Heading>
       <Container
@@ -81,12 +84,11 @@ function Write() {
             onChange={(e) => setTitle(e.target.value)}
             width={"500px"}
             placeholder={"Title"}
+            border={"1px solid rgb(240, 240, 240)"}
             variant={"unstyled"}
-            border={"1px solid black"}
             height={"40px"}
             padding={"5px 10px"}
             type={"text"}
-            outline={"1px solid #385898"}
           />
         </Flex>{" "}
         <Flex align={"center"}>
@@ -94,40 +96,46 @@ function Write() {
             onChange={(e) => setDescription(e.target.value)}
             width={"500px"}
             variant={"unstyled"}
-            border={"1px solid black"}
+            border={"1px solid rgb(240, 240, 240)"}
             height={"40px"}
             padding={"5px 10px"}
             placeholder={"Description"}
             type={"text"}
-            outline={"1px solid #385898"}
+            // outline={"1px solid #385898"}
           />
         </Flex>{" "}
-        <Flex align={"center"}>
-          <Input
-            onChange={(e) => setTime(e.target.value)}
-            width={"500px"}
-            placeholder={"Reading Time (in Minutes)"}
-            variant={"unstyled"}
-            border={"1px solid black"}
-            height={"40px"}
-            padding={"5px 10px"}
-            type={"number"}
-            outline={"1px solid #385898"}
-          />
+        <Flex gap={"20px"}>
+          <Flex align={"center"}>
+            <Input
+              onChange={(e) => setTime(e.target.value)}
+              width={"240px"}
+              placeholder={"Reading Time (in Minutes)"}
+              variant={"unstyled"}
+              border={"1px solid rgb(240, 240, 240)"}
+              height={"40px"}
+              padding={"5px 10px"}
+              type={"number"}
+            />
+          </Flex>
+          <Flex align={"center"}>
+            <Input
+              onChange={(e) => setLink(e.target.value)}
+              width={"240px"}
+              variant={"unstyled"}
+              border={"1px solid rgb(240, 240, 240)"}
+              height={"40px"}
+              placeholder={"Photo (link):"}
+              padding={"5px 10px"}
+              type={"text"}
+            />
+          </Flex>
         </Flex>
-        <Flex align={"center"}>
-          <Input
-            onChange={(e) => setLink(e.target.value)}
-            width={"500px"}
-            variant={"unstyled"}
-            border={"1px solid black"}
-            height={"40px"}
-            placeholder={"Photo (link):"}
-            padding={"5px 10px"}
-            type={"text"}
-            outline={"1px solid #385898"}
-          />
-        </Flex>
+        <Textarea
+          width={"500px"}
+          height={"400px"}
+          placeholder="Article"
+          onChange={(e) => setArticle(e.target.value)}
+        ></Textarea>
         <Flex align={"center"} flexDir="column">
           <Text>Catigory:</Text>
           <Box display={"flex"} gap={"30px"} my={"20px"} flexWrap={"wrap"}>
@@ -177,6 +185,13 @@ function Write() {
               />
             </Box>
           </Box>
+          {category == "other" && (
+            <Input
+              placeholder="other..."
+              onChange={(e) => setOtherCategory(e.target.value)}
+              type="text"
+            />
+          )}
         </Flex>
         <Text>{error}</Text>
         <Button width={"200px"} colorScheme={"facebook"} onClick={onWrite}>

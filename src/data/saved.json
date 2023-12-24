@@ -1,0 +1,16 @@
+{
+  "authorId": [
+    {
+      "title": "aslkdasdlk",
+      "description": "as,mda,smdn",
+      "readMinutes": "11",
+      "photo": " https://source.unsplash.com/random/800x600/?link",
+      "author": "Sunnatillo Ruzmetov",
+      "date": "2023-12-22",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJacmRnU0hvdGNZWmlMS1NxR0tqcEZVbVgwSCJ9",
+      "category": "tech",
+      "id": "822f2f27-1bf9-45ea-b97a-faa9ae73c61b",
+      "article": "as,mda,smdn"
+    }
+  ]
+}

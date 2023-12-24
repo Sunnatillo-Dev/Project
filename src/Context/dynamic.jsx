@@ -5,15 +5,19 @@ const DynamicContext = ({ children }) => {
   let [userData, setUserData] = useState([]);
   let [newsData, setNewsData] = useState([]);
   let [scrollY, setScrollY] = useState(0);
+  let [searchTitle, setSearchTitle] = useState("");
+
   return (
     <DynamicProvider.Provider
       value={{
         userData,
-        setNewsData,
         setUserData,
+        searchTitle,
+        setSearchTitle,
         newsData,
-        setScrollY,
+        setNewsData,
         scrollY,
+        setScrollY,
       }}
     >
       {children}

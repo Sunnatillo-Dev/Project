@@ -6,18 +6,10 @@ import { ClerkProvider, useUser } from "@clerk/nextjs";
 import DynamicContext from "@/Context/dynamic";
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    const initializeClerk = async () => {
-      // Ensure Clerk is initialized
-      await fetch("/api/init-clerk"); // Assuming you have an API route to initialize Clerk
-    };
-
-    initializeClerk();
-  }, []);
-
+ 
   return (
     <ChakraProvider>
-      <ClerkProvider>
+      <ClerkProvider {...pageProps}>
         <DynamicContext>
           <Layout>
             <Component {...pageProps} />

@@ -24,7 +24,7 @@ export default function AllNews() {
       console.log("enough");
     } else {
       setTimeout(() => {
-        axios.get("api/newsapi").then((res) => {
+        axios.get("/api/newsapi").then((res) => {
           setData([...data, ...res.data.slice(fromNum, num)]);
           setNum((prev) => prev + 4);
         });
@@ -58,9 +58,7 @@ export default function AllNews() {
     axios.get("api/newsapi").then((res) => {
       setDataLength(res.data.length);
     });
-    axios
-      .get("https://6586a41d468ef171392e8253.mockapi.io/news/news")
-      .then((res) => console.log(res.data));
+
     fetchData();
     handleCategory("");
   }, []);

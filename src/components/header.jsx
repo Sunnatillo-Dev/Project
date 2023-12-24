@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
@@ -8,26 +8,30 @@ import { useRouter } from "next/router";
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
 import { Box, Button, Flex, Input } from "@chakra-ui/react";
 import { DynamicProvider } from "@/Context/dynamic";
+import axios from "axios";
 // import { Box } from "@chakra-ui/react";
-
 function Header() {
-  let router = useRouter();
   let { user } = useUser();
-  let { scrollY, setScrollY } = useContext(DynamicProvider);
-  //
+  let router = useRouter();
+  let { scrollY, setScrollY, searchTitle, setSearchTitle } =
+    useContext(DynamicProvider);
+
   const scrollH = () => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
         setScrollY(window.scrollY);
-        console.log(window.scrollY);
       });
     }
   };
-
   useEffect(() => {
     scrollH();
   }, []);
-
+  let onSearch = () => {
+    if (searchTitle.length) {
+      router.push(`/search/${searchTitle}`);
+      setSearchTitle("");
+    }
+  };
   //
   return (
     <Box
@@ -67,7 +71,7 @@ function Header() {
           align={"center"}
           gap={"10px"}
           transition={"all 0.5s"}
-          border={!user ? "2px solid black  " : "auto"}
+          border={!user ? "2px solid black  " : "1px solid "}
           backgroundColor={
             !user && !(scrollY >= 400) && router.asPath == "/"
               ? "#FFC017"
@@ -81,6 +85,13 @@ function Header() {
             height={"40px"}
             border={"none"}
             outline={"none"}
+            value={searchTitle}
+            onChange={(e) => setSearchTitle(e.target.value)}
+            onKeyUp={(e) => {
+              if (e.key == "Enter") {
+                onSearch();
+              }
+            }}
             placeholder={"Search"}
             type={"text"}
             fontSize={"16px"}
@@ -119,16 +130,7 @@ function Header() {
         </Flex>
         {!user && (
           <Flex gap={"20px"}>
-            {/* <Button
-              display={"flex"}
-              onClick={() => {
-                router.push("/sign-in");
-              }}
-              variant={"unstyled"}
-            >
-              Sign In
-            </Button> */}
-            <SignInButton redirectUrl="/sign-in" style={{ display: "flex", alignItems: "center" }}>
+            <SignInButton style={{ display: "flex", alignItems: "center" }}>
               Sign In
             </SignInButton>
             <SignUpButton
@@ -142,18 +144,6 @@ function Header() {
             >
               Get Started
             </SignUpButton>
-            {/* <Button
-              onClick={() => {
-                router.push("/sign-up");
-              }}
-              color={"white"}
-              background={"black"}
-              borderRadius={"30px"}
-              padding={"10px 20px"}
-              _hover={{ background: "blackAlpha.800" }}
-            >
-              Get Started
-            </Button> */}
           </Flex>
         )}
 

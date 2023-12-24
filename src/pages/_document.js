@@ -14,13 +14,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&family=Inter&family=Montserrat&family=Poppins&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="" />
         <title>Medium</title>
       </Head>
-      <body
-        style={{ fontFamily: "Inter" }}
-        marginwidth={0}
-        marginheight={0}
-      >
+      <body style={{ fontFamily: "Inter" }} marginwidth={0} marginheight={0}>
         <Main />
         <NextScript />
       </body>

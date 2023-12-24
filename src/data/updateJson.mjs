@@ -1,28 +1,38 @@
-import fs from 'fs/promises';
+import fs from "fs/promises";
 
 async function processFile() {
   try {
-    // Read the JSON file
-    const data = await fs.readFile('News.json', 'utf8');
+    // Log the current working directory
+    console.log("Current working directory:", process.cwd());
 
-    // Parse the JSON data
+    // List files in the current working directory
+    const filesInDirectory = await fs.readdir(".");
+    console.log("Files in the directory:", filesInDirectory);
+
+    // Check if the file exists
+    const fileExists = await fs
+      .access("News.json")
+      .then(() => true)
+      .catch(() => false);
+
+    if (!fileExists) {
+      console.error("Error: The 'News.json' file does not exist.");
+      return;
+    }
+
+    // Rest of your code remains the same
+    const data = await fs.readFile("News.json", "utf8");
     const yourList = JSON.parse(data);
+    const updatedList = yourList.map((item) => ({
+      ...item,
+      article: item.description,
+    }));
+    const updatedData = JSON.stringify(updatedList, null, 2);
 
-    // Update the list
-    yourList.forEach(item => {
-      const photoUrlParts = item.photo.split('/?');
-      const category = photoUrlParts[photoUrlParts.length - 1];
-      item.category = category;
-    });
-
-    // Convert the updated data back to JSON
-    const updatedData = JSON.stringify(yourList, null, 2);
-
-    // Write the updated data to a new file
-    await fs.writeFile('updated-News.json', updatedData, 'utf8');
-    console.log('Data updated and saved to updated-News.json!');
+    await fs.writeFile("News.json", updatedData, "utf8");
+    console.log("Data updated and saved to updated-News.json!");
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 

@@ -25,20 +25,9 @@ function SingleNew({
   photo,
 }) {
   let router = useRouter();
-  let { userData, setNewsData, setUserData, newsData } =
-    useContext(DynamicProvider);
+
   let getNewsData = (id) => {
-    setNewsData(
-      NewsDataFromJson.filter((singleNew) => {
-        return singleNew.id == id;
-      })
-    );
-    console.log(
-      NewsDataFromJson.filter((singleNew) => {
-        return singleNew.id == id;
-      })
-    );
-    router.push("/new");
+    router.push(`/new/${id}`);
   };
   let { user } = useUser();
   return (
