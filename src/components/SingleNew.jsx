@@ -23,13 +23,21 @@ function SingleNew({
   description,
   id,
   photo,
+  category,
 }) {
+  let { user } = useUser();
+  let userId = user?.id ? user.id : "user";
+  let saveData = (data) => {
+    axios.post("/api/saved", {
+      userId,
+      data,
+    });
+  };
   let router = useRouter();
 
   let getNewsData = (id) => {
     router.push(`/new/${id}`);
   };
-  let { user } = useUser();
   return (
     <GridItem
       key={id}
@@ -131,8 +139,19 @@ function SingleNew({
               _hover={{ opacity: 1 }}
               onClick={
                 user
-                  ? () => console.log("vaqtinchalik ishlayapti")
-                  : () => router.push("/sign-in")
+                  ? () =>
+                      saveData({
+                        readMinutes,
+                        avatar,
+                        author,
+                        date,
+                        title,
+                        description,
+                        id,
+                        photo,
+                        category,
+                      })
+                  : () => router.push("/search")
               }
             >
               <svg

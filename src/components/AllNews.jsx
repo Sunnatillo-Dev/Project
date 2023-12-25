@@ -46,7 +46,7 @@ export default function AllNews() {
       setNewData(
         data.filter((item) => {
           return (
-            item.category.toLowerCase().includes(type) ||
+            item.category?.toLowerCase().includes(type) ||
             item.title.toLowerCase().includes(type) ||
             item.description.toLowerCase().includes(type.toLowerCase())
           );

@@ -90,8 +90,7 @@ const GuestCatigory = () => {
       width={"80%"}
       top={"10px"}
       flexDirection="column"
-      // justifyContent="space-between"
-      height="1000px"
+      height="100vh"
       pl={"50px"}
       pt={"80px"}
       mt={"50px"}

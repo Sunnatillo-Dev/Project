@@ -21,12 +21,12 @@ function Write() {
   let [article, setArticle] = useState(``);
   let [link, setLink] = useState("");
   let [category, setCategory] = useState("");
-  let [otherCategory, setOtherCategory] = useState();
+  let [otherCategory, setOtherCategory] = useState("");
   let [error, setError] = useState("");
   const router = useRouter();
   const onWrite = async () => {
     try {
-      if (!title || !description || !time || !link || !category) {
+      if (!title || !description || !time || !link || !category.length) {
         setError("All fields are required and write all of them correctly");
         return;
       }
@@ -51,7 +51,7 @@ function Write() {
 
         date: dateString,
         avatar: user.imageUrl,
-        category: category == "other" && otherCategory,
+        category: category == "other" ? otherCategory : category,
         article,
       });
 
@@ -132,7 +132,7 @@ function Write() {
         </Flex>
         <Textarea
           width={"500px"}
-          height={"400px"}
+          height={"318px"}
           placeholder="Article"
           onChange={(e) => setArticle(e.target.value)}
         ></Textarea>

@@ -12,10 +12,18 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import NewsDataFromJson from "@/data/News.json";
+import { useUser } from "@clerk/nextjs";
 
 const New = () => {
   let router = useRouter();
+  let { user } = useUser();
   let { newsData, setNewsData } = useContext(DynamicProvider);
+  let saveData = (data) => {
+    axios.post("/api/saved", {
+      userId: user?.id,
+      data,
+    });
+  };
   useEffect(() => {
     let getData = async () => {
       setNewsData(
@@ -72,7 +80,7 @@ const New = () => {
         </Box>
       </Flex>
       <Box>
-        <Button variant={"unstyled"}>
+        <Button onClick={() => saveData(newsData[0])} variant={"unstyled"}>
           <svg
             width="24"
             height="24"
@@ -93,17 +101,17 @@ const New = () => {
         </Button>
       </Box>
       <Box>
-        <Text fontSize={"20px"}>{newsData[0]?.article}</Text>
+        <Text my={"20px"} fontSize={"20px"}>
+          {newsData[0]?.description}
+        </Text>
         <Image
           alt="img"
           src={newsData[0]?.photo}
           width={680}
           height={500}
-          style={{ width: "100%" }}
+          style={{ width: "100%", padding: "20px 0 20px 0" }}
         />
-        <Text my={"20px"} fontSize={"20px"}>
-          {newsData[0]?.description}
-        </Text>
+        <Text fontSize={"20px"}>{newsData[0]?.article}</Text>
       </Box>
     </Container>
   );

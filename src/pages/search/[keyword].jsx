@@ -6,48 +6,57 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import { CiCircleMinus } from "react-icons/ci";
-import NewsDataFromJson from "@/data/News.json";
 
 const Search = () => {
   let { query, push } = useRouter();
-  let [searchRes, setSearchRes] = useState([]);
   let [data, setData] = useState([]);
   let { user } = useUser();
+  let { searchRes, setSearchRes, searchTitle, setSearchTitle } =
+    useContext(DynamicProvider);
+  useContext(DynamicProvider);
+  let saveData = (data) => {
+    axios.post("/api/saved", {
+      userId: user.id,
+      data,
+    });
+  };
   let getData = async () => {
     await axios.get("/api/newsapi").then((res) => setData(res.data));
+    if (!searchRes.length) {
+      setSearchRes(
+        data.filter((SingleNew) => {
+          return (
+            SingleNew.category
+              ?.toLowerCase()
+              .includes(query.keyword.toLowerCase()) ||
+            SingleNew.title
+              ?.toLowerCase()
+              .includes(query.keyword.toLowerCase()) ||
+            SingleNew.description
+              ?.toLowerCase()
+              .includes(query.keyword.toLowerCase()) ||
+            SingleNew.article
+              ?.toLowerCase()
+              .includes(query.keyword.toLowerCase()) ||
+            SingleNew.author
+              ?.toLowerCase()
+              .includes(query.keyword.toLowerCase())
+          );
+        })
+      );
+    }
   };
-  // let { setNewsData } = useContext(DynamicProvider);
   let getNewsData = (id) => {
     push(`/new/${id}`);
   };
-  console.log(query.keyword);
   useEffect(() => {
-    setSearchRes(
-      data.filter((SingleNew) => {
-        return (
-          SingleNew.category
-            ?.toLowerCase()
-            .includes(query.keyword.toLowerCase()) ||
-          SingleNew.title
-            ?.toLowerCase()
-            .includes(query.keyword.toLowerCase()) ||
-          SingleNew.description
-            ?.toLowerCase()
-            .includes(query.keyword.toLowerCase()) ||
-          SingleNew.article
-            ?.toLowerCase()
-            .includes(query.keyword.toLowerCase()) ||
-          SingleNew.author?.toLowerCase().includes(query.keyword.toLowerCase())
-        );
-      })
-    );
     getData();
-  }, [query]);
+  }, [query.keyword]);
 
   return (
     <Box m={"0 auto "} maxW={"680px"}>
       <Text fontSize={"42px"} color={"blackAlpha.600"} pt={"100px"}>
-        Result For{" "}
+        Results For{" "}
         <Text color={"black"} as={"span"}>
           {" "}
           {query.keyword}{" "}
@@ -64,6 +73,7 @@ const Search = () => {
             readMinutes,
             photo,
             id,
+            category,
           }) => {
             return (
               <GridItem
@@ -175,7 +185,18 @@ const Search = () => {
                         _hover={{ opacity: 1 }}
                         onClick={
                           user
-                            ? () => console.log("vaqtinchalik ishlayapti")
+                            ? () =>
+                                saveData({
+                                  avatar,
+                                  author,
+                                  date,
+                                  title,
+                                  description,
+                                  readMinutes,
+                                  photo,
+                                  id,
+                                  category,
+                                })
                             : () => router.push("/sign-in")
                         }
                       >
