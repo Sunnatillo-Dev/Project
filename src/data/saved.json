@@ -1,16 +1,67 @@
 {
-  "authorId": [
+  "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [
     {
-      "title": "aslkdasdlk",
-      "description": "as,mda,smdn",
-      "readMinutes": "11",
-      "photo": " https://source.unsplash.com/random/800x600/?link",
-      "author": "Sunnatillo Ruzmetov",
+      "readMinutes": "222",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnRTdmoybkxQZDNMVnE2UXZmSWFmaU9pcGoifQ",
+      "author": "Sunnatillo Ro'zmetov",
       "date": "2023-12-22",
-      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJacmRnU0hvdGNZWmlMS1NxR0tqcEZVbVgwSCJ9",
-      "category": "tech",
-      "id": "822f2f27-1bf9-45ea-b97a-faa9ae73c61b",
-      "article": "as,mda,smdn"
+      "title": "asad",
+      "description": "22",
+      "id": "9cfcae9b-8ffd-4be5-9ce0-be06f35ac9e9",
+      "photo": " https://source.unsplash.com/random/?football"
+    },
+    {
+      "readMinutes": "11",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-25",
+      "title": "asdasd",
+      "description": "asdasd",
+      "id": "230b8454-7792-490d-977d-c3444791a3b7",
+      "photo": " https://source.unsplash.com/random/?cat,dog"
+    }
+  ],
+  "user_2a28DvvkvTL3xBpUV89QIQRrZS3": [
+    null,
+    {
+      "readMinutes": "22",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-25",
+      "title": ";alkjsdfaslkdfj",
+      "description": "asdfasdf",
+      "id": "a713fe27-7026-4a5f-9bb7-162be39da112",
+      "photo": " https://source.unsplash.com/random/?hello world"
+    },
+    {
+      "readMinutes": "11",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-25",
+      "title": "asdasd",
+      "description": "asdasd",
+      "id": "d022b1e4-02fe-4d98-99c8-70d4e7d71ce8",
+      "photo": " https://source.unsplash.com/random/?cat"
+    },
+    {
+      "readMinutes": "22",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-25",
+      "title": ";alkjsdfaslkdfj",
+      "description": "asdfasdf",
+      "id": "a713fe27-7026-4a5f-9bb7-162be39da112",
+      "photo": " https://source.unsplash.com/random/?hello world"
+    },
+    {
+      "readMinutes": "11",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-25",
+      "title": "asdasd",
+      "description": "asdasd",
+      "id": "d022b1e4-02fe-4d98-99c8-70d4e7d71ce8",
+      "photo": " https://source.unsplash.com/random/?cat"
     }
   ]
 }

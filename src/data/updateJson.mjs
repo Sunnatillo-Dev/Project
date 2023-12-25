@@ -11,7 +11,7 @@ async function processFile() {
 
     // Check if the file exists
     const fileExists = await fs
-      .access("News.json")
+      .access("./updated-News.json")
       .then(() => true)
       .catch(() => false);
 
@@ -25,11 +25,11 @@ async function processFile() {
     const yourList = JSON.parse(data);
     const updatedList = yourList.map((item) => ({
       ...item,
-      article: item.description,
+      saved: false,
     }));
     const updatedData = JSON.stringify(updatedList, null, 2);
 
-    await fs.writeFile("News.json", updatedData, "utf8");
+    await fs.writeFile("./updated-News.json", updatedData, "utf8");
     console.log("Data updated and saved to updated-News.json!");
   } catch (error) {
     console.error("Error:", error);

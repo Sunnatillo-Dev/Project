@@ -1,5 +1,45 @@
 [
   {
+    "title": "asdasd",
+    "description": "asdasd",
+    "readMinutes": "11",
+    "photo": " https://source.unsplash.com/random/?cat,dog",
+    "author": "Sunnatillo Ro'zmetov",
+    "userId": "123_aodasdasdjas3h23ehj23",
+    "date": "2023-12-25",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "zidan",
+    "article": "zidan jilli",
+    "id": "230b8454-7792-490d-977d-c3444791a3b7",
+    "saved": false
+  },
+  {
+    "title": ";alkjsdfaslkdfj",
+    "description": "asdfasdf",
+    "readMinutes": "22",
+    "photo": " https://source.unsplash.com/random/?hello world",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2023-12-25",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "hello",
+    "article": "alksdfa;skdjfha;skdfhlaksjdflajsfdasljdalsjh",
+    "id": "a713fe27-7026-4a5f-9bb7-162be39da112",
+    "saved": false
+  },
+  {
+    "title": "asdasd",
+    "description": "asdasd",
+    "readMinutes": "11",
+    "photo": " https://source.unsplash.com/random/?cat",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2023-12-25",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "energy",
+    "article": "askjdfasldkfjhasdlfkj asdjfhasjdf asflhd",
+    "id": "d022b1e4-02fe-4d98-99c8-70d4e7d71ce8",
+    "saved": false
+  },
+  {
     "title": "Hello",
     "description": "Hello asdaskdask asldkjalks jda jslkdak lsdalsdja skda jlskdlasd",
     "readMinutes": "11",
@@ -9,7 +49,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "friend",
     "article": "laflasjkdfljksdj fa sjlkdfhalksdjfhalsjkd fhjka shdflk ashldf jhsaldjfh alsjkdfh askdj fhlaksj dfhlaksj fhdlasjdfh\n\n\n\n\nljkahfl jkshdlfj shdfh asdflasf ljkashdfa\n\n\n\n\nasdf;jkasdf;jkashfd;asjkfh;a jsdfh;asdflj kasdlfkjashljdf",
-    "id": "39624696-4867-4150-a8ab-1f3769cad3e7"
+    "id": "39624696-4867-4150-a8ab-1f3769cad3e7",
+    "saved": false
   },
   {
     "title": "asdasd",
@@ -21,7 +62,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "football",
     "article": "asdasd",
-    "id": "7be147ae-b645-4f27-b5e9-628868932533"
+    "id": "7be147ae-b645-4f27-b5e9-628868932533",
+    "saved": false
   },
   {
     "title": "helo",
@@ -33,7 +75,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "other",
     "article": "hello",
-    "id": "0119e7c1-af49-4b9d-a7c1-8688288a8a99"
+    "id": "0119e7c1-af49-4b9d-a7c1-8688288a8a99",
+    "saved": false
   },
   {
     "title": "asdasdasdad",
@@ -45,7 +88,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "other",
     "article": "asasdasd",
-    "id": "a8e45681-b163-49f1-b840-17952c63ee5d"
+    "id": "a8e45681-b163-49f1-b840-17952c63ee5d",
+    "saved": false
   },
   {
     "title": "asdasdasd",
@@ -57,7 +101,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "other",
     "article": "awdawdasd",
-    "id": "5f84172c-a975-48b2-a1ad-2e8711dbb95a"
+    "id": "5f84172c-a975-48b2-a1ad-2e8711dbb95a",
+    "saved": false
   },
   {
     "title": "Zidan",
@@ -69,7 +114,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
     "category": "other",
     "id": "3ad41e70-7e20-4394-8d61-efc589761fdf",
-    "article": "Zidan"
+    "article": "Zidan",
+    "saved": false
   },
   {
     "title": "qqweqw",
@@ -81,7 +127,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJadWVjRkJqQUkwWUZaRnphUEZBcUV0R2JvRSJ9",
     "category": "other",
     "id": "a40e4dae-7149-45f8-82c7-1f2481876c94",
-    "article": "qweqwe"
+    "article": "qweqwe",
+    "saved": false
   },
   {
     "title": "People are making lots of money from crypto",
@@ -93,7 +140,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJadWVjRkJqQUkwWUZaRnphUEZBcUV0R2JvRSJ9",
     "category": "crypto",
     "id": "f7ee212b-5662-4812-bb50-e52953abbb7c",
-    "article": "People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto"
+    "article": "People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto People are making lots of money from crypto",
+    "saved": false
   },
   {
     "title": "asad",
@@ -105,7 +153,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnRTdmoybkxQZDNMVnE2UXZmSWFmaU9pcGoifQ",
     "category": "other",
     "id": "9cfcae9b-8ffd-4be5-9ce0-be06f35ac9e9",
-    "article": "22"
+    "article": "22",
+    "saved": false
   },
   {
     "title": "asdasd",
@@ -117,7 +166,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnRTdmoybkxQZDNMVnE2UXZmSWFmaU9pcGoifQ",
     "category": "other",
     "id": "21ea3db0-9753-4244-b742-e35ba64f197a",
-    "article": "asdasdasdas"
+    "article": "asdasdasdas",
+    "saved": false
   },
   {
     "title": "aslkdasdlk",
@@ -129,7 +179,8 @@
     "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJacmRnU0hvdGNZWmlMS1NxR0tqcEZVbVgwSCJ9",
     "category": "tech",
     "id": "822f2f27-1bf9-45ea-b97a-faa9ae73c61b",
-    "article": "as,mda,smdn"
+    "article": "as,mda,smdn",
+    "saved": false
   },
   {
     "id": "f3dbeb1e-2969-40db-93ed-b82e253d101e",
@@ -142,7 +193,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?healthcare",
     "readMinutes": "32",
     "category": "healthcare",
-    "article": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes."
+    "article": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes.",
+    "saved": false
   },
   {
     "id": "d3c90d30-f108-4bcc-a0cf-f09c18537483",
@@ -155,7 +207,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?cryptocurrency",
     "readMinutes": "8",
     "category": "crypto",
-    "article": "As cryptocurrencies gain mainstream attention, explore the trends and challenges shaping the digital financial landscape."
+    "article": "As cryptocurrencies gain mainstream attention, explore the trends and challenges shaping the digital financial landscape.",
+    "saved": false
   },
   {
     "id": "26d360c6-e1ef-41e7-a515-42b97af4225e",
@@ -168,7 +221,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy",
     "readMinutes": "50",
     "category": "energy",
-    "article": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation."
+    "article": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation.",
+    "saved": false
   },
   {
     "id": "2726932d-570e-4271-99bf-dc668dd97bd6",
@@ -181,7 +235,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?virtualreality",
     "readMinutes": "3",
     "category": "virtualreality",
-    "article": "Virtual Reality technology is reshaping how we experience entertainment and beyond. Get a glimpse into this transformative era."
+    "article": "Virtual Reality technology is reshaping how we experience entertainment and beyond. Get a glimpse into this transformative era.",
+    "saved": false
   },
   {
     "id": "4b626aef-0205-499a-89da-eec3f19ab9d5",
@@ -194,7 +249,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?tech",
     "readMinutes": "21",
     "category": "tech",
-    "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities."
+    "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
+    "saved": false
   },
   {
     "id": "d963bb4f-e427-4187-a2de-3576b3c1bcb7",
@@ -207,7 +263,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "45",
     "category": "space",
-    "article": "SpaceX sets a new milestone with the successful launch of an advanced satellite fleet. Discover the future of space communication."
+    "article": "SpaceX sets a new milestone with the successful launch of an advanced satellite fleet. Discover the future of space communication.",
+    "saved": false
   },
   {
     "id": "8ed482eb-0a33-472a-b929-facedb894542",
@@ -220,7 +277,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?solar",
     "readMinutes": "18",
     "category": "solar",
-    "article": "Incredible strides in solar technology lead to a green energy revolution. Learn about the latest innovations driving sustainability."
+    "article": "Incredible strides in solar technology lead to a green energy revolution. Learn about the latest innovations driving sustainability.",
+    "saved": false
   },
   {
     "id": "13461ebb-25b1-4afa-bbc6-d64972d896aa",
@@ -233,7 +291,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biotechnology",
     "readMinutes": "6",
     "category": "biotechnology",
-    "article": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond."
+    "article": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond.",
+    "saved": false
   },
   {
     "id": "da3ee97f-2cca-48b7-ba08-c0545f5500de",
@@ -246,7 +305,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?electricvehicles",
     "readMinutes": "39",
     "category": "electricvehicles",
-    "article": "Explore the rise of electric vehicles and their impact on the automotive industry, climate change, and urban planning."
+    "article": "Explore the rise of electric vehicles and their impact on the automotive industry, climate change, and urban planning.",
+    "saved": false
   },
   {
     "id": "e9daa3f3-7d90-45b5-96c4-39e0588966a6",
@@ -259,7 +319,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?robotics",
     "readMinutes": "12",
     "category": "robotics",
-    "article": "Witness the ongoing robotic revolution as robots become integral to industries such as manufacturing, healthcare, and logistics."
+    "article": "Witness the ongoing robotic revolution as robots become integral to industries such as manufacturing, healthcare, and logistics.",
+    "saved": false
   },
   {
     "id": "5e78c058-8ba1-4d11-b06f-417b46a37af1",
@@ -272,7 +333,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?technology",
     "readMinutes": "56",
     "category": "technology",
-    "article": "Delve into the field of neurotechnology, where brain-machine interfaces are transforming the way we interact with machines and computers."
+    "article": "Delve into the field of neurotechnology, where brain-machine interfaces are transforming the way we interact with machines and computers.",
+    "saved": false
   },
   {
     "id": "846c122a-f5da-4777-802e-1751ae6afe9a",
@@ -285,7 +347,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?5g",
     "readMinutes": "27",
     "category": "5g",
-    "article": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication."
+    "article": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication.",
+    "saved": false
   },
   {
     "id": "88922f6c-f00d-42de-9162-1fa3cf033f82",
@@ -298,7 +361,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biometrics",
     "readMinutes": "5",
     "category": "biometrics",
-    "article": "Discover how biometric technology is becoming an integral part of our daily lives, influencing security measures and authentication processes."
+    "article": "Discover how biometric technology is becoming an integral part of our daily lives, influencing security measures and authentication processes.",
+    "saved": false
   },
   {
     "id": "83cccdbc-8785-407d-b0e6-a5a075ae04ac",
@@ -311,7 +375,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?remotework",
     "readMinutes": "48",
     "category": "remotework",
-    "article": "As remote work becomes the norm, explore the evolving landscape of virtual collaboration tools and the future of the workplace."
+    "article": "As remote work becomes the norm, explore the evolving landscape of virtual collaboration tools and the future of the workplace.",
+    "saved": false
   },
   {
     "id": "072d4347-2004-467d-bc1e-2304b22492d4",
@@ -324,7 +389,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "9",
     "category": "space",
-    "article": "Join the exploration of space beyond our solar system, where scientists and astronomers seek new frontiers and potential habitable exoplanets."
+    "article": "Join the exploration of space beyond our solar system, where scientists and astronomers seek new frontiers and potential habitable exoplanets.",
+    "saved": false
   },
   {
     "id": "4a9b1094-0c23-4004-a748-35c85825ff49",
@@ -337,7 +403,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?augmentedreality",
     "readMinutes": "36",
     "category": "augmentedreality",
-    "article": "Witness the evolution of augmented reality and its impact on gaming, education, and everyday experiences, blending the virtual and real worlds."
+    "article": "Witness the evolution of augmented reality and its impact on gaming, education, and everyday experiences, blending the virtual and real worlds.",
+    "saved": false
   },
   {
     "id": "788da87f-8e71-48ee-8f24-d745641fb95a",
@@ -350,7 +417,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?drones",
     "readMinutes": "17",
     "category": "drones",
-    "article": "Explore how drones are transforming agriculture, improving crop monitoring, and optimizing farming practices for increased efficiency."
+    "article": "Explore how drones are transforming agriculture, improving crop monitoring, and optimizing farming practices for increased efficiency.",
+    "saved": false
   },
   {
     "id": "d272e690-ca7b-44d9-bf97-b135a5f8db8b",
@@ -363,7 +431,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?tech",
     "readMinutes": "42",
     "category": "tech",
-    "article": "Delve into the world of biomedical engineering and its role in developing cutting-edge medical devices, prosthetics, and health technologies."
+    "article": "Delve into the world of biomedical engineering and its role in developing cutting-edge medical devices, prosthetics, and health technologies.",
+    "saved": false
   },
   {
     "id": "62347fa9-b619-4227-8174-29e45edff07c",
@@ -376,7 +445,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?computer",
     "readMinutes": "2",
     "category": "computer",
-    "article": "Explore recent breakthroughs in genetic engineering, including CRISPR technology, and its potential impact on medicine, agriculture, and beyond."
+    "article": "Explore recent breakthroughs in genetic engineering, including CRISPR technology, and its potential impact on medicine, agriculture, and beyond.",
+    "saved": false
   },
   {
     "id": "614d0e0f-61f5-42cf-8012-841618b9e69b",
@@ -389,7 +459,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?smartcities",
     "readMinutes": "58",
     "category": "smartcities",
-    "article": "Witness the evolution of smart cities, where technology integrates with urban infrastructure to enhance efficiency, sustainability, and quality of life."
+    "article": "Witness the evolution of smart cities, where technology integrates with urban infrastructure to enhance efficiency, sustainability, and quality of life.",
+    "saved": false
   },
   {
     "id": "daedc18f-3f73-43d8-92ac-a9536fafcdc0",
@@ -402,7 +473,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?artificialintelligence",
     "readMinutes": "29",
     "category": "artificialintelligence",
-    "article": "Explore the concept of Artificial General Intelligence (AGI) and its potential to create machines with human-like cognitive abilities."
+    "article": "Explore the concept of Artificial General Intelligence (AGI) and its potential to create machines with human-like cognitive abilities.",
+    "saved": false
   },
   {
     "id": "42fb937c-3206-48c6-9bec-60c139115e3e",
@@ -415,7 +487,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?ocean",
     "readMinutes": "11",
     "category": "ocean",
-    "article": "Join the expedition into the depths of the ocean, where scientists uncover the mysteries of marine life, ecosystems, and underwater geology."
+    "article": "Join the expedition into the depths of the ocean, where scientists uncover the mysteries of marine life, ecosystems, and underwater geology.",
+    "saved": false
   },
   {
     "id": "d77a7cb0-cf07-4f4a-a1a3-2114a0488130",
@@ -428,7 +501,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?technology",
     "readMinutes": "54",
     "category": "technology",
-    "article": "Explore the latest technological breakthroughs that are shaping the future of innovation."
+    "article": "Explore the latest technological breakthroughs that are shaping the future of innovation.",
+    "saved": false
   },
   {
     "id": "b41bd072-8d78-4040-a759-edb8598a0645",
@@ -441,7 +515,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?healthcare",
     "readMinutes": "25",
     "category": "healthcare",
-    "article": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes."
+    "article": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes.",
+    "saved": false
   },
   {
     "id": "8a992b71-f1f2-4589-ab24-3dcf120e909e",
@@ -454,7 +529,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?cryptocurrency",
     "readMinutes": "7",
     "category": "crypto",
-    "article": "As cryptocurrencies gain mainstream attention, explore the trends and challenges shaping the digital financial landscape."
+    "article": "As cryptocurrencies gain mainstream attention, explore the trends and challenges shaping the digital financial landscape.",
+    "saved": false
   },
   {
     "id": "497c134f-a32a-4b0b-b21a-c70ae50b4670",
@@ -467,7 +543,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy",
     "readMinutes": "51",
     "category": "energy",
-    "article": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation."
+    "article": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation.",
+    "saved": false
   },
   {
     "id": "39dabef9-da87-4a88-af4a-d88bcc44e8b6",
@@ -480,7 +557,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?virtualreality",
     "readMinutes": "14",
     "category": "virtualreality",
-    "article": "Virtual Reality technology is reshaping how we experience entertainment and beyond. Get a glimpse into this transformative era."
+    "article": "Virtual Reality technology is reshaping how we experience entertainment and beyond. Get a glimpse into this transformative era.",
+    "saved": false
   },
   {
     "id": "99c74076-7401-4617-817f-8c6fe0780fae",
@@ -493,7 +571,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?computing",
     "readMinutes": "31",
     "category": "computing",
-    "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities."
+    "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
+    "saved": false
   },
   {
     "id": "4bd0010f-8048-424f-8a4e-890563c26de7",
@@ -506,7 +585,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "10",
     "category": "space",
-    "article": "SpaceX sets a new milestone with the successful launch of an advanced satellite fleet. Discover the future of space communication."
+    "article": "SpaceX sets a new milestone with the successful launch of an advanced satellite fleet. Discover the future of space communication.",
+    "saved": false
   },
   {
     "id": "45283e89-faa3-4e6d-9c39-301bfab0db2c",
@@ -519,7 +599,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?solar",
     "readMinutes": "47",
     "category": "solar",
-    "article": "Incredible strides in solar technology lead to a green energy revolution. Learn about the latest innovations driving sustainability."
+    "article": "Incredible strides in solar technology lead to a green energy revolution. Learn about the latest innovations driving sustainability.",
+    "saved": false
   },
   {
     "id": "766593dc-3dee-40e2-b5f8-42f467ea9e25",
@@ -532,7 +613,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biotechnology",
     "readMinutes": "20",
     "category": "biotechnology",
-    "article": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond."
+    "article": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond.",
+    "saved": false
   },
   {
     "id": "5df30314-251f-4d40-b3f3-47d22eb3d3b8",
@@ -545,7 +627,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?electric",
     "readMinutes": "4",
     "category": "electric",
-    "article": "Explore the rise of electric vehicles and their impact on the automotive industry, climate change, and urban planning."
+    "article": "Explore the rise of electric vehicles and their impact on the automotive industry, climate change, and urban planning.",
+    "saved": false
   },
   {
     "id": "430c5db6-712e-46f3-abc1-32351e7b64eb",
@@ -558,7 +641,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?robotics",
     "readMinutes": "35",
     "category": "robotics",
-    "article": "Witness the ongoing robotic revolution as robots become integral to industries such as manufacturing, healthcare, and logistics."
+    "article": "Witness the ongoing robotic revolution as robots become integral to industries such as manufacturing, healthcare, and logistics.",
+    "saved": false
   },
   {
     "id": "433cb607-4a99-43bd-bfe4-9e4567daab4b",
@@ -571,7 +655,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?technology",
     "readMinutes": "16",
     "category": "technology",
-    "article": "Delve into the field of neurotechnology, where brain-machine interfaces are transforming the way we interact with machines and computers."
+    "article": "Delve into the field of neurotechnology, where brain-machine interfaces are transforming the way we interact with machines and computers.",
+    "saved": false
   },
   {
     "id": "e6cca2e6-1c35-4bc8-8ded-ed7ee03c178f",
@@ -584,7 +669,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?5g",
     "readMinutes": "41",
     "category": "5g",
-    "article": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication."
+    "article": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication.",
+    "saved": false
   },
   {
     "id": "3df32fb0-ced2-4ce7-86a6-63b2867d3061",
@@ -597,7 +683,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biometrics",
     "readMinutes": "1",
     "category": "biometrics",
-    "article": "Discover how biometric technology is becoming an integral part of our daily lives, influencing security measures and authentication processes."
+    "article": "Discover how biometric technology is becoming an integral part of our daily lives, influencing security measures and authentication processes.",
+    "saved": false
   },
   {
     "id": "c0b3593a-6252-4a38-b154-29b01fef342d",
@@ -610,7 +697,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?remotework",
     "readMinutes": "57",
     "category": "remotework",
-    "article": "As remote work becomes the norm, explore the evolving landscape of virtual collaboration tools and the future of the workplace."
+    "article": "As remote work becomes the norm, explore the evolving landscape of virtual collaboration tools and the future of the workplace.",
+    "saved": false
   },
   {
     "id": "ed5dcdd0-90cd-4a6b-adc6-c17ea8b27cd1",
@@ -623,7 +711,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "28",
     "category": "space",
-    "article": "Join the exploration of space beyond our solar system, where scientists and astronomers seek new frontiers and potential habitable exoplanets."
+    "article": "Join the exploration of space beyond our solar system, where scientists and astronomers seek new frontiers and potential habitable exoplanets.",
+    "saved": false
   },
   {
     "id": "cc67a9a6-9854-48e4-a474-3134033d8c82",
@@ -636,7 +725,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?future",
     "readMinutes": "13",
     "category": "future",
-    "article": "Witness the evolution of augmented reality and its impact on gaming, education, and everyday experiences, blending the virtual and real worlds."
+    "article": "Witness the evolution of augmented reality and its impact on gaming, education, and everyday experiences, blending the virtual and real worlds.",
+    "saved": false
   },
   {
     "id": "b89b5b00-63e5-453c-aeae-1d1fd517532b",
@@ -649,7 +739,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?drones",
     "readMinutes": "55",
     "category": "drones",
-    "article": "Explore how drones are transforming agriculture, improving crop monitoring, and optimizing farming practices for increased efficiency."
+    "article": "Explore how drones are transforming agriculture, improving crop monitoring, and optimizing farming practices for increased efficiency.",
+    "saved": false
   },
   {
     "id": "ddf59416-7a1f-409d-ad21-14e4fdc37dda",
@@ -662,7 +753,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biomedical",
     "readMinutes": "26",
     "category": "biomedical",
-    "article": "Delve into the world of biomedical engineering and its role in developing cutting-edge medical devices, prosthetics, and health technologies."
+    "article": "Delve into the world of biomedical engineering and its role in developing cutting-edge medical devices, prosthetics, and health technologies.",
+    "saved": false
   },
   {
     "id": "3aef3f3c-6c79-4d09-bae2-244d2a349742",
@@ -675,7 +767,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?engineering",
     "readMinutes": "8",
     "category": "engineering",
-    "article": "Explore recent breakthroughs in genetic engineering, including CRISPR technology, and its potential impact on medicine, agriculture, and beyond."
+    "article": "Explore recent breakthroughs in genetic engineering, including CRISPR technology, and its potential impact on medicine, agriculture, and beyond.",
+    "saved": false
   },
   {
     "id": "07719909-b730-4b90-b834-c1e38438057f",
@@ -688,7 +781,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?smartcities",
     "readMinutes": "49",
     "category": "smartcities",
-    "article": "Witness the evolution of smart cities, where technology integrates with urban infrastructure to enhance efficiency, sustainability, and quality of life."
+    "article": "Witness the evolution of smart cities, where technology integrates with urban infrastructure to enhance efficiency, sustainability, and quality of life.",
+    "saved": false
   },
   {
     "id": "16c4d537-7015-46df-8e60-c5582020fbcb",
@@ -701,7 +795,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?artificialintelligence",
     "readMinutes": "19",
     "category": "artificialintelligence",
-    "article": "Explore the concept of Artificial General Intelligence (AGI) and its potential to create machines with human-like cognitive abilities."
+    "article": "Explore the concept of Artificial General Intelligence (AGI) and its potential to create machines with human-like cognitive abilities.",
+    "saved": false
   },
   {
     "id": "064f0e03-cd64-481b-9adf-a77d3bd64318",
@@ -714,7 +809,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?oceanexploration",
     "readMinutes": "43",
     "category": "oceanexploration",
-    "article": "Join the expedition into the depths of the ocean, where scientists uncover the mysteries of marine life, ecosystems, and underwater geology."
+    "article": "Join the expedition into the depths of the ocean, where scientists uncover the mysteries of marine life, ecosystems, and underwater geology.",
+    "saved": false
   },
   {
     "id": "c446b604-ecc7-44ca-9215-84a806f22f1e",
@@ -727,7 +823,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?nanotechnology",
     "readMinutes": "15",
     "category": "nanotechnology",
-    "article": "Explore the world of nanotechnology and how tiny particles are making a significant impact in various industries, from medicine to electronics."
+    "article": "Explore the world of nanotechnology and how tiny particles are making a significant impact in various industries, from medicine to electronics.",
+    "saved": false
   },
   {
     "id": "92eec7b8-b29d-4a0a-b952-14285d8ddbaa",
@@ -740,7 +837,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?aerospace",
     "readMinutes": "40",
     "category": "aerospace",
-    "article": "Dive into the advancements in aerospace engineering, including next-gen aircraft designs, propulsion systems, and space exploration technologies."
+    "article": "Dive into the advancements in aerospace engineering, including next-gen aircraft designs, propulsion systems, and space exploration technologies.",
+    "saved": false
   },
   {
     "id": "4be6b495-747f-4f61-8e46-0556d522a4fe",
@@ -753,7 +851,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?datascience",
     "readMinutes": "22",
     "category": "datascience",
-    "article": "Discover the latest trends in data science, from machine learning algorithms to big data analytics, unlocking valuable insights across various industries."
+    "article": "Discover the latest trends in data science, from machine learning algorithms to big data analytics, unlocking valuable insights across various industries.",
+    "saved": false
   },
   {
     "id": "6c8421ee-1c10-4432-bc56-f817b3495650",
@@ -766,7 +865,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?gaming",
     "readMinutes": "3",
     "category": "gaming",
-    "article": "Witness the evolution of gaming technology, with virtual reality, augmented reality, and cutting-edge graphics delivering immersive experiences for gamers worldwide."
+    "article": "Witness the evolution of gaming technology, with virtual reality, augmented reality, and cutting-edge graphics delivering immersive experiences for gamers worldwide.",
+    "saved": false
   },
   {
     "id": "ad1210c5-6c23-4760-bf2d-a7b9f8e179ec",
@@ -779,7 +879,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?3dprinting",
     "readMinutes": "59",
     "category": "3dprinting",
-    "article": "Explore the exciting world of 3D printing and how it's revolutionizing manufacturing, healthcare, and design, layer by layer."
+    "article": "Explore the exciting world of 3D printing and how it's revolutionizing manufacturing, healthcare, and design, layer by layer.",
+    "saved": false
   },
   {
     "id": "be002895-2b59-487f-a995-d3625814c174",
@@ -792,7 +893,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?internet",
     "readMinutes": "30",
     "category": "internet",
-    "article": "Delve into the interconnected world of IoT, where everyday devices are becoming smarter and more connected, transforming the way we live and work."
+    "article": "Delve into the interconnected world of IoT, where everyday devices are becoming smarter and more connected, transforming the way we live and work.",
+    "saved": false
   },
   {
     "id": "e3c4481e-ce8d-44c9-af94-aa7c525c4527",
@@ -805,7 +907,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?eco",
     "readMinutes": "12",
     "category": "eco",
-    "article": "Discover the latest breakthroughs in renewable materials, from sustainable fabrics to biodegradable plastics, contributing to a more eco-friendly future."
+    "article": "Discover the latest breakthroughs in renewable materials, from sustainable fabrics to biodegradable plastics, contributing to a more eco-friendly future.",
+    "saved": false
   },
   {
     "id": "cf9887bf-9d77-42e6-ae79-064657ea000b",
@@ -818,7 +921,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?augmentedhealthcare",
     "readMinutes": "46",
     "category": "augmentedhealthcare",
-    "article": "Explore how augmented reality is revolutionizing healthcare, enhancing patient experiences, medical training, and surgical procedures."
+    "article": "Explore how augmented reality is revolutionizing healthcare, enhancing patient experiences, medical training, and surgical procedures.",
+    "saved": false
   },
   {
     "id": "88035d4c-31cd-4462-b17c-575cd4ba884e",
@@ -831,7 +935,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?cybersecurity",
     "readMinutes": "23",
     "category": "cybersecurity",
-    "article": "Dive into the world of cybersecurity advancements, from AI-powered threat detection to blockchain-based secure systems, safeguarding our digital world."
+    "article": "Dive into the world of cybersecurity advancements, from AI-powered threat detection to blockchain-based secure systems, safeguarding our digital world.",
+    "saved": false
   },
   {
     "id": "992d1e37-0392-4823-bbd2-70db56ee12d1",
@@ -844,7 +949,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?ecommerce",
     "readMinutes": "6",
     "category": "ecommerce",
-    "article": "Witness the evolution of e-commerce, with innovations in online shopping experiences, digital payments, and personalized recommendations shaping the future of retail."
+    "article": "Witness the evolution of e-commerce, with innovations in online shopping experiences, digital payments, and personalized recommendations shaping the future of retail.",
+    "saved": false
   },
   {
     "id": "a2c13f3b-2aff-41f5-ab7e-43265fb3f0ab",
@@ -857,7 +963,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?crypto",
     "readMinutes": "37",
     "category": "crypto",
-    "article": "Explore the cutting-edge field of quantum cryptography, where quantum principles are harnessed to create ultra-secure communication systems."
+    "article": "Explore the cutting-edge field of quantum cryptography, where quantum principles are harnessed to create ultra-secure communication systems.",
+    "saved": false
   },
   {
     "id": "767490f9-44b6-4c71-9d0c-2eeef174ba89",
@@ -870,7 +977,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?telecommunications",
     "readMinutes": "18",
     "category": "telecommunications",
-    "article": "Dive into the future of telecommunications, with 6G technology promising faster speeds, lower latency, and new possibilities for communication."
+    "article": "Dive into the future of telecommunications, with 6G technology promising faster speeds, lower latency, and new possibilities for communication.",
+    "saved": false
   },
   {
     "id": "bec1c020-1d75-46e8-bff8-9e3b3fb051b6",
@@ -883,7 +991,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?design",
     "readMinutes": "44",
     "category": "design",
-    "article": "Discover the concept of biophilic design, where nature is integrated into architecture, creating healthier and more sustainable living and working spaces."
+    "article": "Discover the concept of biophilic design, where nature is integrated into architecture, creating healthier and more sustainable living and working spaces.",
+    "saved": false
   },
   {
     "id": "e08c2ca8-43dd-466c-873d-572bc4cc9a24",
@@ -896,7 +1005,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?robotics",
     "readMinutes": "2",
     "category": "robotics",
-    "article": "Explore how robotics is becoming an integral part of our daily lives, from assistive robots in healthcare to companion robots enhancing our well-being."
+    "article": "Explore how robotics is becoming an integral part of our daily lives, from assistive robots in healthcare to companion robots enhancing our well-being.",
+    "saved": false
   },
   {
     "id": "6dacf6c1-4eef-43c4-86fe-2835a3901350",
@@ -909,7 +1019,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "53",
     "category": "space",
-    "article": "Witness the rise of space tourism, as private companies make strides in offering civilians the opportunity to travel beyond Earth's atmosphere."
+    "article": "Witness the rise of space tourism, as private companies make strides in offering civilians the opportunity to travel beyond Earth's atmosphere.",
+    "saved": false
   },
   {
     "id": "a59350a4-7b74-4f9c-b5d5-f9441279f932",
@@ -922,7 +1033,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?tech",
     "readMinutes": "24",
     "category": "tech",
-    "article": "Explore how technological advancements are reshaping agriculture, from precision farming and autonomous tractors to smart irrigation systems."
+    "article": "Explore how technological advancements are reshaping agriculture, from precision farming and autonomous tractors to smart irrigation systems.",
+    "saved": false
   },
   {
     "id": "dff927e4-43ce-402a-93b0-36a32ef23869",
@@ -935,7 +1047,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biohacking",
     "readMinutes": "7",
     "category": "biohacking",
-    "article": "Delve into the world of biohacking, where individuals explore DIY biology, genetic modifications, and other enhancements to push the boundaries of human capabilities."
+    "article": "Delve into the world of biohacking, where individuals explore DIY biology, genetic modifications, and other enhancements to push the boundaries of human capabilities.",
+    "saved": false
   },
   {
     "id": "a822489a-f08b-4395-89af-63b2b79a270f",
@@ -948,7 +1061,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?solarpower",
     "readMinutes": "52",
     "category": "solarpower",
-    "article": "Discover the latest advancements in solar power technology, from efficient solar panels to innovative solar energy storage solutions, paving the way for a sustainable future."
+    "article": "Discover the latest advancements in solar power technology, from efficient solar panels to innovative solar energy storage solutions, paving the way for a sustainable future.",
+    "saved": false
   },
   {
     "id": "3ec0586d-447f-4674-b268-007b8119b065",
@@ -961,7 +1075,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?transportation",
     "readMinutes": "15",
     "category": "transportation",
-    "article": "Explore the future of transportation with high-speed rail and hyperloop technologies, promising faster and more efficient travel for the modern world."
+    "article": "Explore the future of transportation with high-speed rail and hyperloop technologies, promising faster and more efficient travel for the modern world.",
+    "saved": false
   },
   {
     "id": "b6609891-4725-4472-8355-45d07563b2de",
@@ -974,7 +1089,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?science",
     "readMinutes": "33",
     "category": "science",
-    "article": "Dive into the fascinating world of quantum physics, where particles defy classical laws, opening new frontiers in technology and our understanding of the universe."
+    "article": "Dive into the fascinating world of quantum physics, where particles defy classical laws, opening new frontiers in technology and our understanding of the universe.",
+    "saved": false
   },
   {
     "id": "e3b48022-7988-463b-88b1-793623d655f7",
@@ -987,7 +1103,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?engineering",
     "readMinutes": "9",
     "category": "engineering",
-    "article": "Explore the latest breakthroughs in material science, from smart materials that respond to stimuli to innovations in construction materials reshaping architecture."
+    "article": "Explore the latest breakthroughs in material science, from smart materials that respond to stimuli to innovations in construction materials reshaping architecture.",
+    "saved": false
   },
   {
     "id": "9b1e472c-8d79-410c-a37c-e71f90efbdff",
@@ -1000,7 +1117,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?robotics",
     "readMinutes": "38",
     "category": "robotics",
-    "article": "Witness the future of robotics with humanoid companions and AI-driven assistants, blurring the line between machines and humans in our daily lives."
+    "article": "Witness the future of robotics with humanoid companions and AI-driven assistants, blurring the line between machines and humans in our daily lives.",
+    "saved": false
   },
   {
     "id": "062fa8fc-68e5-4cb8-bae4-ef89f4364480",
@@ -1013,7 +1131,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?computerscience",
     "readMinutes": "21",
     "category": "computerscience",
-    "article": "Delve into the field of neuromorphic computing, where machines mimic the structure and functioning of the human brain, paving the way for advanced artificial intelligence."
+    "article": "Delve into the field of neuromorphic computing, where machines mimic the structure and functioning of the human brain, paving the way for advanced artificial intelligence.",
+    "saved": false
   },
   {
     "id": "63505bce-23ab-4d48-8ffa-d0b935c15605",
@@ -1026,7 +1145,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biology",
     "readMinutes": "5",
     "category": "biology",
-    "article": "Explore the emerging field of quantum biology, unraveling the role of quantum effects in living organisms and potentially influencing medical treatments and diagnostics."
+    "article": "Explore the emerging field of quantum biology, unraveling the role of quantum effects in living organisms and potentially influencing medical treatments and diagnostics.",
+    "saved": false
   },
   {
     "id": "56653176-10dc-4985-9ed2-3568a04b46cf",
@@ -1039,7 +1159,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?medicine",
     "readMinutes": "50",
     "category": "medicine",
-    "article": "Discover the future of medicine with personalized and precision healthcare, leveraging genetic information and advanced technologies for tailored treatment approaches."
+    "article": "Discover the future of medicine with personalized and precision healthcare, leveraging genetic information and advanced technologies for tailored treatment approaches.",
+    "saved": false
   },
   {
     "id": "08d1e06e-078f-40c1-ac7a-7d9cfd52535c",
@@ -1052,7 +1173,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?space",
     "readMinutes": "10",
     "category": "space",
-    "article": "Embark on the quest for extraterrestrial life with astrobiology, exploring the conditions for life beyond Earth and the potential for finding habitable exoplanets."
+    "article": "Embark on the quest for extraterrestrial life with astrobiology, exploring the conditions for life beyond Earth and the potential for finding habitable exoplanets.",
+    "saved": false
   },
   {
     "id": "fa51677a-af00-403e-ae0d-40b72f203ca8",
@@ -1065,7 +1187,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?microorganisms",
     "readMinutes": "34",
     "category": "microorganisms",
-    "article": "Uncover the significance of the microbiome in human health and environmental processes, as scientific advancements revolutionize our understanding of microorganisms."
+    "article": "Uncover the significance of the microbiome in human health and environmental processes, as scientific advancements revolutionize our understanding of microorganisms.",
+    "saved": false
   },
   {
     "id": "41660431-3da0-4aad-9237-9c5ab06bb91a",
@@ -1078,7 +1201,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?chemistry",
     "readMinutes": "16",
     "category": "chemistry",
-    "article": "Explore the cutting-edge developments in quantum chemistry, where quantum principles redefine our understanding of molecular structures and chemical reactions."
+    "article": "Explore the cutting-edge developments in quantum chemistry, where quantum principles redefine our understanding of molecular structures and chemical reactions.",
+    "saved": false
   },
   {
     "id": "a00ba886-c987-48be-af09-2ffddc4fe4ce",
@@ -1091,7 +1215,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?energy",
     "readMinutes": "45",
     "category": "energy",
-    "article": "Dive into the future of energy storage, with innovations in battery technology, grid-scale solutions, and renewable energy integration reshaping the global energy landscape."
+    "article": "Dive into the future of energy storage, with innovations in battery technology, grid-scale solutions, and renewable energy integration reshaping the global energy landscape.",
+    "saved": false
   },
   {
     "id": "25c55b0e-0c0c-4154-85cf-66836851fc4e",
@@ -1104,7 +1229,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?computing",
     "readMinutes": "11",
     "category": "computing",
-    "article": "Explore the advancements in cognitive computing, where artificial intelligence goes beyond traditional programming, learning, and problem-solving in a more human-like fashion."
+    "article": "Explore the advancements in cognitive computing, where artificial intelligence goes beyond traditional programming, learning, and problem-solving in a more human-like fashion.",
+    "saved": false
   },
   {
     "id": "844f662c-63f9-43d5-8fca-5c598a6f0864",
@@ -1117,7 +1243,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?future",
     "readMinutes": "54",
     "category": "future",
-    "article": "Embrace the future of work with trends in remote collaboration tools, artificial intelligence assisting human tasks, and the evolving landscape of the modern workplace."
+    "article": "Embrace the future of work with trends in remote collaboration tools, artificial intelligence assisting human tasks, and the evolving landscape of the modern workplace.",
+    "saved": false
   },
   {
     "id": "a9c7cb7e-73b8-483e-9d2b-3f81dd30c316",
@@ -1130,7 +1257,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?nanotechnology",
     "readMinutes": "27",
     "category": "nanotechnology",
-    "article": "Discover the small wonders and big impacts of nanotechnology, where manipulating materials at the nanoscale opens up new possibilities in medicine, electronics, and beyond."
+    "article": "Discover the small wonders and big impacts of nanotechnology, where manipulating materials at the nanoscale opens up new possibilities in medicine, electronics, and beyond.",
+    "saved": false
   },
   {
     "id": "2a9e6a33-17a9-4e96-9edf-8ab402d6c193",
@@ -1143,7 +1271,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?internet",
     "readMinutes": "1",
     "category": "internet",
-    "article": "Enter the era of the quantum internet, where quantum entanglement and superposition pave the way for ultra-secure and high-speed global communication networks."
+    "article": "Enter the era of the quantum internet, where quantum entanglement and superposition pave the way for ultra-secure and high-speed global communication networks.",
+    "saved": false
   },
   {
     "id": "1c8419c4-0718-4a83-ae2b-bc0c8fb24242",
@@ -1156,7 +1285,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?biotechnology",
     "readMinutes": "60",
     "category": "biotechnology",
-    "article": "Witness the merging of biology and technology with groundbreaking biotechnological advancements, from gene editing to synthetic biology, shaping the future of healthcare and beyond."
+    "article": "Witness the merging of biology and technology with groundbreaking biotechnological advancements, from gene editing to synthetic biology, shaping the future of healthcare and beyond.",
+    "saved": false
   },
   {
     "id": "d2dc3bb9-c871-49aa-8350-de9b0681bb41",
@@ -1169,7 +1299,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?augmentedreality",
     "readMinutes": "undefined",
     "category": "augmentedreality",
-    "article": "Explore the future of augmented reality, where digital information seamlessly blends with the real world, transforming how we work, learn, and interact with our surroundings."
+    "article": "Explore the future of augmented reality, where digital information seamlessly blends with the real world, transforming how we work, learn, and interact with our surroundings.",
+    "saved": false
   },
   {
     "id": "c3537bba-e46a-4bad-a4b0-b9d581e878f4",
@@ -1182,7 +1313,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?medicine",
     "readMinutes": "undefined",
     "category": "medicine",
-    "article": "Decipher the blueprint of life with advancements in genomic medicine, exploring how our understanding of genetics is leading to personalized treatments and preventive healthcare."
+    "article": "Decipher the blueprint of life with advancements in genomic medicine, exploring how our understanding of genetics is leading to personalized treatments and preventive healthcare.",
+    "saved": false
   },
   {
     "id": "babc42b6-02e3-408c-beb7-735048983da4",
@@ -1195,7 +1327,8 @@
     "photo": "https://source.unsplash.com/random/800x600/?gaming",
     "readMinutes": "undefined",
     "category": "gaming",
-    "article": "Immerse yourself in the future of gaming, where advancements in virtual reality, augmented reality, and artificial intelligence create unprecedented levels of realism and interactivity."
+    "article": "Immerse yourself in the future of gaming, where advancements in virtual reality, augmented reality, and artificial intelligence create unprecedented levels of realism and interactivity.",
+    "saved": false
   },
   {
     "id": "b1ea56d0-e455-40df-9bc9-86ebc448a632",
@@ -1208,6 +1341,7 @@
     "photo": "https://source.unsplash.com/random/800x600/?computing",
     "readMinutes": "undefined",
     "category": "computing",
-    "article": "Unleash the potential of quantum computing, where quantum bits and superposition redefine the limits of classical computing, solving complex problems at unprecedented speeds."
+    "article": "Unleash the potential of quantum computing, where quantum bits and superposition redefine the limits of classical computing, solving complex problems at unprecedented speeds.",
+    "saved": false
   }
 ]
