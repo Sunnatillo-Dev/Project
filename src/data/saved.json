@@ -1,15 +1,58 @@
 {
   "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [
     {
+      "title": "asad",
+      "description": "asd",
       "readMinutes": "11",
-      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ",
-      "author": "Sunnatillo Rozmetov",
-      "date": "2023-12-26",
-      "title": "this is the test title",
-      "description": "this is the test one too",
-      "id": "517c7b86-ef65-4e39-aa55-70ba5c7a2cf2",
-      "photo": " https://source.unsplash.com/random/?test"
+      "photo": " https://source.unsplash.com/random/?king",
+      "author": "Sunnatillo Ro'zmetov",
+      "date": "2023-12-27",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+      "category": "future",
+      "article": "asdasd",
+      "id": "71da4ac9-28d0-426a-8c8d-ff668a991d98"
     }
   ],
-  "user_2a28DvvkvTL3xBpUV89QIQRrZS3": []
+  "user_2a28DvvkvTL3xBpUV89QIQRrZS3": [
+    {
+      "readMinutes": "18",
+      "avatar": "https://source.unsplash.com/random/800x600/?electrician",
+      "author": "EcoInnovator",
+      "date": "2023-10-12",
+      "title": "Green Energy Breakthroughs: Solar Revolution",
+      "description": "Incredible strides in solar technology lead to a green energy revolution. Learn about the latest innovations driving sustainability.",
+      "id": "8ed482eb-0a33-472a-b929-facedb894542",
+      "photo": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+      "readMinutes": "21",
+      "avatar": "https://source.unsplash.com/random/800x600/?designer",
+      "author": "QuantumExplorer",
+      "date": "2024-01-18",
+      "title": "Quantum Computing: Unraveling the Future",
+      "description": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
+      "id": "4b626aef-0205-499a-89da-eec3f19ab9d5",
+      "photo": "https://source.unsplash.com/random/800x600/?tech"
+    },
+    {
+      "readMinutes": "3",
+      "avatar": "https://source.unsplash.com/random/800x600/?engineer",
+      "author": "VRVisionary",
+      "date": "2024-01-05",
+      "title": "Virtual Reality: A New Era of Experiences",
+      "description": "Virtual Reality technology is reshaping how we experience entertainment and beyond. Get a glimpse into this transformative era.",
+      "id": "2726932d-570e-4271-99bf-dc668dd97bd6",
+      "photo": "https://source.unsplash.com/random/800x600/?virtualreality"
+    },
+    {
+      "readMinutes": "11",
+      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJacmRnU0hvdGNZWmlMS1NxR0tqcEZVbVgwSCJ9",
+      "author": "Sunnatillo Ruzmetov",
+      "date": "2023-12-22",
+      "title": "aslkdasdlk",
+      "description": "as,mda,smdn",
+      "id": "822f2f27-1bf9-45ea-b97a-faa9ae73c61b",
+      "photo": " https://source.unsplash.com/random/800x600/?link"
+    }
+  ]
 }
