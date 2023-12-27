@@ -6,7 +6,7 @@ async function processFile() {
     const yourList = JSON.parse(data);
     const updatedList = yourList.map((item) => ({
       ...item,
-      saved: false,
+      saved: [],
     }));
     const updatedData = JSON.stringify(updatedList, null, 2);
 

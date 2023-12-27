@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { Box, Button, Grid, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Link, Text } from "@chakra-ui/react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "@/components/Loader";
 import SingleNew from "@/components/SingleNew";
@@ -63,21 +63,23 @@ export default function AllNews() {
     handleCategory("");
   }, []);
   return (
-    <Box width={"680px"} pt={user ? "100px" : "auto"}>
+    <Flex
+      flexDir={"column"}
+      width={{ base: "auto" }}
+      pt={user ? "100px" : "auto"}
+    >
       {user && (
         <div
           style={{
-            width: "100%",
+            // width: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             borderBottom: "1px solid gray",
+            overflow: "hidden",
           }}
         >
           <Box
-            // background={"red"}
-            // alignItems={"center"}
-
             display={"flex"}
             alignItems={"stretch"}
             gap={"20px"}
@@ -85,29 +87,35 @@ export default function AllNews() {
             height={"40px"}
             overflow={"hidden"}
           >
-            <h1
+            <Text
+              fontSize={{ base: "10px", sm: "13px", lg: "16px" }}
               style={{
                 cursor: "pointer",
+
                 userSelect: "none",
               }}
               onClick={(e) => handleCategory("")}
               className={!selectedCategory ? "selected-category" : ""}
             >
               For&nbsp;You
-            </h1>
-            <h1
+            </Text>
+            <Text
+              fontSize={{ base: "10px", sm: "13px", lg: "16px" }}
               style={{
                 cursor: "pointer",
+
                 userSelect: "none",
               }}
               onClick={(e) => handleCategory("tech")}
               className={selectedCategory === "tech" ? "selected-category" : ""}
             >
               Technology
-            </h1>
-            <h1
+            </Text>
+            <Text
+              fontSize={{ base: "10px", sm: "13px", lg: "16px" }}
               style={{
                 cursor: "pointer",
+
                 userSelect: "none",
               }}
               onClick={(e) => handleCategory("crypto")}
@@ -116,10 +124,12 @@ export default function AllNews() {
               }
             >
               Crypto
-            </h1>
-            <h1
+            </Text>
+            <Text
+              fontSize={{ base: "10px", sm: "13px", lg: "16px" }}
               style={{
                 cursor: "pointer",
+
                 userSelect: "none",
               }}
               onClick={(e) => handleCategory("energy")}
@@ -128,10 +138,12 @@ export default function AllNews() {
               }
             >
               Energy city
-            </h1>
-            <h1
+            </Text>
+            <Text
+              fontSize={{ base: "10px", sm: "13px", lg: "16px" }}
               style={{
                 cursor: "pointer",
+
                 userSelect: "none",
               }}
               onClick={(e) => handleCategory("future")}
@@ -140,18 +152,23 @@ export default function AllNews() {
               }
             >
               Future & Modern
-            </h1>
+            </Text>
           </Box>
         </div>
       )}
-
       <InfiniteScroll
         dataLength={data.length}
         next={fetchData}
         hasMore={hasMore}
         loader={hasMore ? <Loader /> : ""}
       >
-        <Grid my={"20px"} gap={"30px"} templateColumns={"repeat(1,1fr)"}>
+        <Grid
+          my={"20px"}
+          gap={"30px"}
+          width={"100%"}
+          templateColumns={"repeat(1,1fr)"}
+          maxW={"680px"}
+        >
           {newData.slice(0, num).map((item) => (
             <SingleNew
               readMinutes={item.readMinutes}
@@ -201,6 +218,6 @@ export default function AllNews() {
           </Button>
         </Box>
       )}
-    </Box>
+    </Flex>
   );
 }

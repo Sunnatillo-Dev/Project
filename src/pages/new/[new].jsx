@@ -17,12 +17,53 @@ import { useUser } from "@clerk/nextjs";
 const New = () => {
   let router = useRouter();
   let { user } = useUser();
+  let [isSaved, setIsSaved] = useState(false);
   let { newsData, setNewsData } = useContext(DynamicProvider);
+
+  let [refresh, setRefresh] = useState(false);
+  useEffect(() => {
+    axios
+      .get("/api/saved")
+      .then((res) =>
+        res?.data[user?.id]?.some((item) => {
+          return item.id == newsData[0]?.id;
+        })
+      )
+      .then((res) => {
+        setIsSaved(res);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, [newsData[0]?.id, user?.id, isSaved, refresh]);
+  let onDelete = async (id) => {
+    try {
+      await axios
+        .delete("/api/saved", {
+          data: {
+            userId: user.id,
+            id,
+          },
+        })
+        .then(() => {
+          setRefresh((prevRefresh) => !prevRefresh);
+        });
+    } catch (error) {
+      console.error("Error deleting news item:", error.message);
+    }
+  };
   let saveData = (data) => {
-    axios.post("/api/saved", {
-      userId: user?.id,
-      data,
-    });
+    axios
+      .post("/api/saved", {
+        userId: user?.id,
+        data,
+      })
+      .finally(() => {
+        setRefresh((prevRefresh) => !prevRefresh);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
   useEffect(() => {
     let getData = async () => {
@@ -80,19 +121,40 @@ const New = () => {
         </Box>
       </Flex>
       <Box>
-        <Button onClick={() => saveData(newsData[0])} variant={"unstyled"}>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="nu"
-          >
-            <path
-              d="M17.5 1.25a.5.5 0 0 1 1 0v2.5H21a.5.5 0 0 1 0 1h-2.5v2.5a.5.5 0 0 1-1 0v-2.5H15a.5.5 0 0 1 0-1h2.5v-2.5zm-11 4.5a1 1 0 0 1 1-1H11a.5.5 0 0 0 0-1H7.5a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V5.75z"
-              fill="#000"
-            ></path>
-          </svg>
+        <Button
+          onClick={
+            user
+              ? () =>
+                  isSaved ? onDelete(newsData[0]?.id) : saveData(newsData[0])
+              : () => router.push("/")
+          }
+          variant={"unstyled"}
+        >
+          {!isSaved ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="#6B6B6B"
+            >
+              <path
+                d="M18 1.25C18 1.11739 18.0527 0.990215 18.1464 0.896447C18.2402 0.802678 18.3674 0.75 18.5 0.75C18.6326 0.75 18.7598 0.802678 18.8536 0.896447C18.9473 0.990215 19 1.11739 19 1.25V3.75H21.5C21.6326 3.75 21.7598 3.80268 21.8536 3.89645C21.9473 3.99021 22 4.11739 22 4.25C22 4.38261 21.9473 4.50979 21.8536 4.60355C21.7598 4.69732 21.6326 4.75 21.5 4.75H19V7.25C19 7.38261 18.9473 7.50979 18.8536 7.60355C18.7598 7.69732 18.6326 7.75 18.5 7.75C18.3674 7.75 18.2402 7.69732 18.1464 7.60355C18.0527 7.50979 18 7.38261 18 7.25V4.75H15.5C15.3674 4.75 15.2402 4.69732 15.1464 4.60355C15.0527 4.50979 15 4.38261 15 4.25C15 4.11739 15.0527 3.99021 15.1464 3.89645C15.2402 3.80268 15.3674 3.75 15.5 3.75H18V1.25ZM7 5.75C7 5.48478 7.10536 5.23043 7.29289 5.04289C7.48043 4.85536 7.73478 4.75 8 4.75H11.5C11.6326 4.75 11.7598 4.69732 11.8536 4.60355C11.9473 4.50979 12 4.38261 12 4.25C12 4.11739 11.9473 3.99021 11.8536 3.89645C11.7598 3.80268 11.6326 3.75 11.5 3.75H8C7.46957 3.75 6.96086 3.96071 6.58579 4.33579C6.21071 4.71086 6 5.21957 6 5.75V19.75C6 19.8429 6.02586 19.9339 6.07467 20.0129C6.12349 20.0919 6.19334 20.1557 6.27639 20.1972C6.35945 20.2387 6.45242 20.2563 6.5449 20.248C6.63738 20.2396 6.72572 20.2057 6.8 20.15L12.5 15.75L18.2 20.15C18.2743 20.2057 18.3626 20.2396 18.4551 20.248C18.5476 20.2563 18.6406 20.2387 18.7236 20.1972C18.8067 20.1557 18.8765 20.0919 18.9253 20.0129C18.9741 19.9339 19 19.8429 19 19.75V11.25C19 11.1174 18.9473 10.9902 18.8536 10.8964C18.7598 10.8027 18.6326 10.75 18.5 10.75C18.3674 10.75 18.2402 10.8027 18.1464 10.8964C18.0527 10.9902 18 11.1174 18 11.25V18.73L12.8 14.73C12.7135 14.6651 12.6082 14.63 12.5 14.63C12.3918 14.63 12.2865 14.6651 12.2 14.73L7 18.73V5.75Z"
+                fill="#6B6B6B"
+              />{" "}
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#008000" // Change the fill color or other styles
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+            </svg>
+          )}
         </Button>
         <Button variant={"unstyled"}>
           <svg width="24" height="24" viewBox="0 0 24 24" className="us">

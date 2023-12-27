@@ -18,6 +18,7 @@ const GuestCatigory = () => {
       flexDirection="column"
       justifyContent="space-between"
       height="200px"
+      display={{ base: "none", xl: "flex" }}
     >
       <Text my={"20px"} fontWeight={"bold"}>
         Discover more of what matters to you
@@ -94,6 +95,7 @@ const GuestCatigory = () => {
       pl={"50px"}
       pt={"80px"}
       mt={"50px"}
+      display={{ base: "none", xl: "flex" }}
     >
       <Text fontSize={"17px"} fontWeight={"bold"}>
         Staff Picks

@@ -46,6 +46,25 @@ export default async function getNews(req, res) {
           message: "News item already exists in the saved items",
         });
       }
+    } else if (req.method === "PUT") {
+      const { userId, id, updatedData } = req.body;
+      const newsData = await readNewsFile();
+      const newsItemIndex = newsData[userId]?.findIndex(
+        (item) => item.id === id
+      );
+
+      if (newsItemIndex !== -1) {
+        newsData[userId][newsItemIndex] = updatedData;
+        await writeNewsFile(newsData);
+        res.status(200).json({
+          message: "News item updated successfully",
+          updatedNewsItem: updatedData,
+        });
+      } else {
+        res.status(404).json({
+          message: "News item not found for update",
+        });
+      }
     } else if (req.method == "DELETE") {
       const { userId, id } = req.body;
       const newsData = await readNewsFile();
