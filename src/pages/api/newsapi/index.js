@@ -23,13 +23,13 @@ export default async function getNews(req, res) {
   };
 
   try {
+    const newsData = await readNewsFile();
+
     if (req.method === "GET") {
-      const newsData = await readNewsFile();
       res.status(200).json(newsData);
     } else if (req.method === "POST") {
       const newNewsItem = req.body;
       newNewsItem.id = uuidv4();
-      const newsData = await readNewsFile();
       newsData.unshift(newNewsItem);
       await writeNewsFile(newsData);
       res.status(201).json({
@@ -38,8 +38,6 @@ export default async function getNews(req, res) {
       });
     } else if (req.method === "PUT") {
       const { id, comment, fullname, userImage } = req.body;
-      const newsData = await readNewsFile();
-
       const newsItemIndex = newsData.findIndex((item) => item.id === id);
 
       if (newsItemIndex !== -1) {

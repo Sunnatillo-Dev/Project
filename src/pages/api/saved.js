@@ -8,7 +8,7 @@ const readNewsFile = async () => {
     const data = await fsPromises.readFile(newsFilePath, "utf-8");
     return JSON.parse(data);
   } catch (error) {
-    throw new Error(`Error reading News.json: ${error.message}`);
+    throw new Error(`Error reading saved.json: ${error.message}`);
   }
 };
 
@@ -16,26 +16,25 @@ const writeNewsFile = async (data) => {
   try {
     await fsPromises.writeFile(newsFilePath, JSON.stringify(data, null, 2));
   } catch (error) {
-    throw new Error(`Error writing to News.json: ${error.message}`);
+    throw new Error(`Error writing to saved.json: ${error.message}`);
   }
 };
 
 export default async function getNews(req, res) {
   try {
+    const newsData = await readNewsFile();
+
     if (req.method === "GET") {
-      const newsData = await readNewsFile();
       res.status(200).json(newsData);
     } else if (req.method === "POST") {
       const newNewsItem = req.body;
       const { userId } = req.body;
-      const newsData = await readNewsFile();
-
       const existingProduct = newsData[userId]?.find(
         (item) => item.id === newNewsItem.data.id
       );
 
       if (!existingProduct) {
-        newsData[userId] = [newNewsItem.data, ...newsData[userId]];
+        newsData[userId] = [newNewsItem.data, ...(newsData[userId] || [])];
         await writeNewsFile(newsData);
         res.status(201).json({
           message: "News item added successfully",
@@ -48,7 +47,6 @@ export default async function getNews(req, res) {
       }
     } else if (req.method === "PUT") {
       const { userId, id, updatedData } = req.body;
-      const newsData = await readNewsFile();
       const newsItemIndex = newsData[userId]?.findIndex(
         (item) => item.id === id
       );
@@ -65,15 +63,12 @@ export default async function getNews(req, res) {
           message: "News item not found for update",
         });
       }
-    } else if (req.method == "DELETE") {
+    } else if (req.method === "DELETE") {
       const { userId, id } = req.body;
-      const newsData = await readNewsFile();
-      const NewNewsData = newsData[userId].filter((item) => {
-        return item.id != id;
-      });
-      newsData[userId] = NewNewsData;
-      writeNewsFile(newsData);
-      res.status(202).json(NewNewsData);
+      const newNewsData = newsData[userId]?.filter((item) => item.id !== id);
+      newsData[userId] = newNewsData;
+      await writeNewsFile(newsData);
+      res.status(202).json(newNewsData);
     } else {
       res.status(405).json({ message: "Method Not Allowed" });
     }

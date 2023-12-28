@@ -1,40 +1,6 @@
 {
   "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [
     {
-      "id": "4b626aef-0205-499a-89da-eec3f19ab9d5",
-      "title": "Quantum Computing: Unraveling the Future",
-      "description": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
-      "author": "QuantumExplorer",
-      "avatar": "https://source.unsplash.com/random/800x600/?designer",
-      "date": "2024-01-18",
-      "comments": [],
-      "photo": "https://source.unsplash.com/random/800x600/?tech",
-      "readMinutes": "21",
-      "category": "tech",
-      "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
-      "saved": []
-    },
-    {
-      "readMinutes": "32",
-      "avatar": "https://source.unsplash.com/random/800x600/?nurse",
-      "author": "MedTechVisionary",
-      "date": "2023-12-03",
-      "title": "AI in Healthcare: Transforming Patient Care",
-      "description": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes.",
-      "id": "f3dbeb1e-2969-40db-93ed-b82e253d101e",
-      "photo": "https://source.unsplash.com/random/800x600/?healthcare"
-    },
-    {
-      "readMinutes": "50",
-      "avatar": "https://source.unsplash.com/random/800x600/?manager",
-      "author": "GreenTechInnovator",
-      "date": "2023-12-28",
-      "title": "Sustainable Energy Solutions: A Path to Environmental Conservation",
-      "description": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation.",
-      "id": "26d360c6-e1ef-41e7-a515-42b97af4225e",
-      "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy"
-    },
-    {
       "readMinutes": "8",
       "avatar": "https://source.unsplash.com/random/800x600/?accountant",
       "author": "CryptoExplorer",
