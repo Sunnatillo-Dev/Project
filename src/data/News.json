@@ -1,5 +1,63 @@
 [
   {
+    "title": "asasda",
+    "description": "sdasd",
+    "readMinutes": "11",
+    "photo": " https://source.unsplash.com/random/?tiger",
+    "author": "Sunnatillo Rozmetov",
+    "date": "2023-12-28",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ",
+    "category": "random",
+    "article": "aksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hhaksjfalsjbfaskjasdjfas jfa fkjafkha sgdka sgfajk faksjdfakj sfakj sdgfkah sgdfja sjgdfasjkdfaskj dfaks hh",
+    "id": "56cd8813-0ff2-4708-8603-65eb34de149c",
+    "comments": [
+      {
+        "text": "asdas",
+        "user": {
+          "fullname": "Sunnatillo Rozmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "asdasd",
+        "user": {
+          "fullname": "Sunnatillo Rozmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "asdasdasd",
+        "user": {
+          "fullname": "Sunnatillo Rozmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "sdasdasd",
+        "user": {
+          "fullname": "Sunnatillo Rozmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ"
+        },
+        "date": "12/28/2023"
+      }
+    ]
+  },
+  {
+    "title": "asdaadasdaad",
+    "description": "1212",
+    "readMinutes": "11",
+    "photo": " https://source.unsplash.com/random/?link",
+    "author": "Sunnatillo Rozmetov",
+    "date": "2023-12-28",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ",
+    "category": "crypto",
+    "article": "asdasd",
+    "id": "aeb940bd-f4c6-4a5a-b809-6778b5eb59d5"
+  },
+  {
     "title": "Ai is owning our world",
     "description": "ai is far more dangerios than we think",
     "readMinutes": "11",
@@ -93,6 +151,30 @@
     "avatar": "https://source.unsplash.com/random/800x600/?nurse",
     "date": "2023-12-03",
     "comments": [
+      {
+        "text": "",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "aaaa",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/28/2023"
+      },
       {
         "text": "111",
         "user": {
@@ -218,6 +300,14 @@
     "date": "2024-02-02",
     "comments": [
       {
+        "text": "12123",
+        "user": {
+          "fullname": "Sunnatillo Rozmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yYTI4RTFXSlU2OFFnVDU1NThrbkE0dG51U3cifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
         "text": "asdasd",
         "user": {
           "fullname": "Sunnatillo Ro'zmetov",
@@ -305,7 +395,24 @@
     "author": "5GInnovator",
     "avatar": "https://source.unsplash.com/random/800x600/?officer",
     "date": "2024-03-25",
-    "comments": [],
+    "comments": [
+      {
+        "text": "asad",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/28/2023"
+      },
+      {
+        "text": "222",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/28/2023"
+      }
+    ],
     "photo": "https://source.unsplash.com/random/800x600/?5g",
     "readMinutes": "27",
     "category": "5g",
@@ -692,7 +799,24 @@
     "author": "ARInnovator",
     "avatar": "https://source.unsplash.com/random/800x600/?researcher",
     "date": "2024-05-30",
-    "comments": [],
+    "comments": [
+      {
+        "text": "asdadasdasdasdasdasdasdAsdasdasdasdas\nas\ndas\ndas\nda\nsdas\nd\nasasd\nasd\nasd\nasd\nasd",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/29/2023"
+      },
+      {
+        "text": "asdasdasd",
+        "user": {
+          "fullname": "Sunnatillo Ro'zmetov",
+          "userImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ"
+        },
+        "date": "12/29/2023"
+      }
+    ],
     "photo": "https://source.unsplash.com/random/800x600/?future",
     "readMinutes": "13",
     "category": "future",

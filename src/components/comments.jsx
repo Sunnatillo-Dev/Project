@@ -30,13 +30,14 @@ export default function Comments({ dataForComments }) {
   };
   let OnComment = () => {
     setRefresh(!refresh);
-    console.log(comment, dataForComments[0]);
-    axios.put("/api/newsapi", {
-      id: dataForComments[0]?.id,
-      comment,
-      fullname: user?.fullName,
-      userImage: user?.imageUrl,
-    });
+    if (comment.length > 0) {
+      axios.put("/api/newsapi", {
+        id: dataForComments[0]?.id,
+        comment,
+        fullname: user?.fullName,
+        userImage: user?.imageUrl,
+      });
+    }
     setComment("");
   };
   useEffect(() => {
@@ -55,7 +56,10 @@ export default function Comments({ dataForComments }) {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader> Responses (8)</DrawerHeader>
+          <DrawerHeader>
+            {" "}
+            Responses ({dataForComments[0]?.comments?.length})
+          </DrawerHeader>
 
           <DrawerBody>
             <Box
