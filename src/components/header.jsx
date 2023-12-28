@@ -53,7 +53,6 @@ function Header() {
       );
     }
   };
-  //
   return (
     <Box
       boxShadow={

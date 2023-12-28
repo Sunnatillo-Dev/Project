@@ -1,20 +1,9 @@
 import SingleNew from "@/components/SingleNew";
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  GridItem,
-  Text,
-  textDecoration,
-} from "@chakra-ui/react";
+import { Container, Grid, Text } from "@chakra-ui/react";
 import { useUser } from "@clerk/nextjs";
 import axios from "axios";
-import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { CiCircleMinus } from "react-icons/ci";
 
 const SavedNews = () => {
   let [savedData, setSavedData] = useState([]);
@@ -58,6 +47,7 @@ const SavedNews = () => {
             return (
               <SingleNew
                 id={id}
+                key={id}
                 avatar={avatar}
                 author={author}
                 date={date}

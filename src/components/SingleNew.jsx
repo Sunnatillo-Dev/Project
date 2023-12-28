@@ -1,17 +1,8 @@
 import axios from "axios";
-import {
-  Box,
-  Grid,
-  GridItem,
-  Text,
-  Button,
-  Image as ChakraImage,
-} from "@chakra-ui/react";
+import { Box, GridItem, Text, Button } from "@chakra-ui/react";
 import { CiCircleMinus } from "react-icons/ci";
-import { memo, useContext, useEffect, useMemo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import Image from "next/image";
-import NewsDataFromJson from "@/data/News.json";
-import { DynamicProvider } from "@/Context/dynamic";
 import { useRouter } from "next/router";
 import { useUser } from "@clerk/nextjs";
 function SingleNew({
@@ -67,7 +58,6 @@ function SingleNew({
         data,
       })
       .then(() => {
-        // Update the state to trigger a refresh
         setRefresh((prevRefresh) => !prevRefresh);
       })
       .catch((err) => {

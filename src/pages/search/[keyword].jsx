@@ -1,15 +1,12 @@
 import { DynamicProvider } from "@/Context/dynamic";
 import SingleNew from "@/components/SingleNew";
-import { Box, Button, Grid, GridItem, Text } from "@chakra-ui/react";
-import { useUser } from "@clerk/nextjs";
+import { Box, Grid, Text } from "@chakra-ui/react";
 import axios from "axios";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
-import { CiCircleMinus } from "react-icons/ci";
 
 const Search = () => {
-  let { query, push } = useRouter();
+  let { query } = useRouter();
   let [data, setData] = useState([]);
   let { searchRes, setSearchRes } = useContext(DynamicProvider);
   useContext(DynamicProvider);
@@ -67,6 +64,7 @@ const Search = () => {
           }) => {
             return (
               <SingleNew
+                key={id}
                 id={id}
                 avatar={avatar}
                 author={author}

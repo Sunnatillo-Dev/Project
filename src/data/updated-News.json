@@ -1,5 +1,41 @@
 [
   {
+    "title": "asdasdasdasd",
+    "description": "asdasd",
+    "readMinutes": "333",
+    "photo": " https://source.unsplash.com/random/?hero",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2023-12-27",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "hero",
+    "article": "asdasdasdasdasdasdasdasdasdasdasdasd",
+    "id": "1d2977ab-5dfc-4f4c-bdf5-160e6068c883"
+  },
+  {
+    "title": "asad",
+    "description": "asd",
+    "readMinutes": "11",
+    "photo": " https://source.unsplash.com/random/?king",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2023-12-27",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "future",
+    "article": "asdasd",
+    "id": "71da4ac9-28d0-426a-8c8d-ff668a991d98"
+  },
+  {
+    "title": "{}",
+    "description": "{}",
+    "readMinutes": "1",
+    "photo": " https://source.unsplash.com/random/?code",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2023-12-27",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "{}",
+    "article": "{}",
+    "id": "1fcfb48a-abe3-4f3a-8da4-a7a4aaf4ff39"
+  },
+  {
     "title": "this is the test title",
     "description": "this is the test one too",
     "readMinutes": "11",

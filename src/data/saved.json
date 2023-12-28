@@ -1,16 +1,62 @@
 {
   "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [
     {
-      "title": "asad",
-      "description": "asd",
-      "readMinutes": "11",
-      "photo": " https://source.unsplash.com/random/?king",
-      "author": "Sunnatillo Ro'zmetov",
-      "date": "2023-12-27",
-      "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
-      "category": "future",
-      "article": "asdasd",
-      "id": "71da4ac9-28d0-426a-8c8d-ff668a991d98"
+      "id": "4b626aef-0205-499a-89da-eec3f19ab9d5",
+      "title": "Quantum Computing: Unraveling the Future",
+      "description": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
+      "author": "QuantumExplorer",
+      "avatar": "https://source.unsplash.com/random/800x600/?designer",
+      "date": "2024-01-18",
+      "comments": [],
+      "photo": "https://source.unsplash.com/random/800x600/?tech",
+      "readMinutes": "21",
+      "category": "tech",
+      "article": "Explore the world of quantum computing and its potential to revolutionize data processing and computational capabilities.",
+      "saved": []
+    },
+    {
+      "readMinutes": "32",
+      "avatar": "https://source.unsplash.com/random/800x600/?nurse",
+      "author": "MedTechVisionary",
+      "date": "2023-12-03",
+      "title": "AI in Healthcare: Transforming Patient Care",
+      "description": "Discover how artificial intelligence is revolutionizing healthcare, improving diagnostics, and enhancing patient outcomes.",
+      "id": "f3dbeb1e-2969-40db-93ed-b82e253d101e",
+      "photo": "https://source.unsplash.com/random/800x600/?healthcare"
+    },
+    {
+      "readMinutes": "50",
+      "avatar": "https://source.unsplash.com/random/800x600/?manager",
+      "author": "GreenTechInnovator",
+      "date": "2023-12-28",
+      "title": "Sustainable Energy Solutions: A Path to Environmental Conservation",
+      "description": "Dive into the world of sustainable energy and discover the latest solutions driving environmental conservation.",
+      "id": "26d360c6-e1ef-41e7-a515-42b97af4225e",
+      "photo": "https://source.unsplash.com/random/800x600/?sustainableenergy"
+    },
+    {
+      "readMinutes": "8",
+      "avatar": "https://source.unsplash.com/random/800x600/?accountant",
+      "author": "CryptoExplorer",
+      "date": "2023-12-15",
+      "title": "Cryptocurrency Trends: Navigating the Digital Landscape",
+      "description": "As cryptocurrencies gain mainstream attention, explore the trends and challenges shaping the digital financial landscape.",
+      "id": "d3c90d30-f108-4bcc-a0cf-f09c18537483",
+      "photo": "https://source.unsplash.com/random/800x600/?cryptocurrency"
+    },
+    {
+      "id": "13461ebb-25b1-4afa-bbc6-d64972d896aa",
+      "title": "Biotechnology Advancements: Unlocking Potential",
+      "description": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond.",
+      "author": "BioTechPioneer",
+      "avatar": "https://source.unsplash.com/random/800x600/?analyst",
+      "date": "2024-02-02",
+      "comments": [],
+      "photo": "https://source.unsplash.com/random/800x600/?biotechnology",
+      "readMinutes": "6",
+      "category": "biotechnology",
+      "article": "Discover the groundbreaking advancements in biotechnology that are revolutionizing medicine, agriculture, and beyond.",
+      "saved": []
     }
   ],
   "user_2a28DvvkvTL3xBpUV89QIQRrZS3": [

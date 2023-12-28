@@ -12,8 +12,8 @@ const GuestCatigory = () => {
     <Flex
       maxW={"400px"}
       position={scrollY >= 400 ? "sticky" : "static"}
-      right={"6%"} // Adjust as needed
-      width={"80%"} // Adjust as needed
+      right={"6%"} 
+      width={"80%"} 
       top={"60px"}
       flexDirection="column"
       justifyContent="space-between"

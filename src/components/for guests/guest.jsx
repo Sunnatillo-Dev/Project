@@ -1,5 +1,4 @@
-import AllNews from "@/components/AllNews";
-import { Box, Button, Container, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
@@ -15,7 +14,9 @@ let Guest = () => {
           justifyContent={"center"}
           gap={"20px"}
         >
-          <Text as={"span"} fontSize={"106px"}>Stay curious.</Text>
+          <Text as={"span"} fontSize={"106px"}>
+            Stay curious.
+          </Text>
           <Text fontSize={"24px"}>
             Discover stories, thinking, and expertise from writers on any topic.
           </Text>
@@ -31,7 +32,7 @@ let Guest = () => {
               alignItems: "center",
               color: "white",
             }}
-            href={"/sign-in"}
+            href={"/search"}
           >
             Start Reading
           </Link>
@@ -41,7 +42,6 @@ let Guest = () => {
           right={0}
           top={"5%"}
           bottom={"10%"}
-          
           fontSize={"25px"}
           maxW={"500px"}
         >

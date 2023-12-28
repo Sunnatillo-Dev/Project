@@ -1,25 +1,19 @@
 import { DynamicProvider } from "@/Context/dynamic";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Text,
-  useStatStyles,
-} from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import NewsDataFromJson from "@/data/News.json";
 import { useUser } from "@clerk/nextjs";
+import Comments from "@/components/comments";
 
 const New = () => {
   let router = useRouter();
   let { user } = useUser();
   let [isSaved, setIsSaved] = useState(false);
   let { newsData, setNewsData } = useContext(DynamicProvider);
-
+  let { setOpenComment, refreshForCommment } = useContext(DynamicProvider);
   let [refresh, setRefresh] = useState(false);
   useEffect(() => {
     axios
@@ -35,7 +29,7 @@ const New = () => {
       .catch((err) => {
         console.log(err.message);
       });
-  }, [newsData[0]?.id, user?.id, isSaved, refresh]);
+  }, [newsData[0]?.id, user?.id, isSaved, refresh, refreshForCommment]);
   let onDelete = async (id) => {
     try {
       await axios
@@ -52,6 +46,9 @@ const New = () => {
       console.error("Error deleting news item:", error.message);
     }
   };
+  let writeComment = () => {
+    setOpenComment(true);
+  };
   let saveData = (data) => {
     axios
       .post("/api/saved", {
@@ -65,6 +62,7 @@ const New = () => {
         console.log(err.message);
       });
   };
+
   useEffect(() => {
     let getData = async () => {
       setNewsData(
@@ -156,7 +154,12 @@ const New = () => {
             </svg>
           )}
         </Button>
-        <Button variant={"unstyled"}>
+        <Button
+          onClick={() => {
+            writeComment();
+          }}
+          variant={"unstyled"}
+        >
           <svg width="24" height="24" viewBox="0 0 24 24" className="us">
             <path d="M18 16.8a7.14 7.14 0 0 0 2.24-5.32c0-4.12-3.53-7.48-8.05-7.48C7.67 4 4 7.36 4 11.48c0 4.13 3.67 7.48 8.2 7.48a8.9 8.9 0 0 0 2.38-.32c.23.2.48.39.75.56 1.06.69 2.2 1.04 3.4 1.04.22 0 .4-.11.48-.29a.5.5 0 0 0-.04-.52 6.4 6.4 0 0 1-1.16-2.65v.02zm-3.12 1.06l-.06-.22-.32.1a8 8 0 0 1-2.3.33c-4.03 0-7.3-2.96-7.3-6.59S8.17 4.9 12.2 4.9c4 0 7.1 2.96 7.1 6.6 0 1.8-.6 3.47-2.02 4.72l-.2.16v.26l.02.3a6.74 6.74 0 0 0 .88 2.4 5.27 5.27 0 0 1-2.17-.86c-.28-.17-.72-.38-.94-.59l.01-.02z"></path>
           </svg>
@@ -175,6 +178,7 @@ const New = () => {
         />
         <Text fontSize={"20px"}>{newsData[0]?.article}</Text>
       </Box>
+      <Comments dataForComments={newsData} />
     </Container>
   );
 };

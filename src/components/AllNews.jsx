@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Box, Button, Flex, Grid, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Text } from "@chakra-ui/react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "@/components/Loader";
 import SingleNew from "@/components/SingleNew";
@@ -71,7 +71,6 @@ export default function AllNews() {
       {user && (
         <div
           style={{
-            // width: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",

@@ -6,13 +6,15 @@ const DynamicContext = ({ children }) => {
   let [newsData, setNewsData] = useState([]);
   let [scrollY, setScrollY] = useState(0);
   let [searchRes, setSearchRes] = useState([]);
-
+  let [openComment, setOpenComment] = useState(false);
+  let [refreshForCommment, setRefreshForCommment] = useState(false);
   let [searchTitle, setSearchTitle] = useState("");
-
   return (
     <DynamicProvider.Provider
       value={{
         userData,
+        refreshForCommment,
+        setRefreshForCommment,
         searchRes,
         setSearchRes,
         setUserData,
@@ -22,6 +24,8 @@ const DynamicContext = ({ children }) => {
         setNewsData,
         scrollY,
         setScrollY,
+        openComment,
+        setOpenComment,
       }}
     >
       {children}

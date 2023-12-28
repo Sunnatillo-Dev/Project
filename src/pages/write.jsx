@@ -101,7 +101,6 @@ function Write() {
             padding={"5px 10px"}
             placeholder={"Description"}
             type={"text"}
-            // outline={"1px solid #385898"}
           />
         </Flex>{" "}
         <Flex gap={"20px"}>
