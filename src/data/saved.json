@@ -1,40 +1,5 @@
 {
-  "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [
-    {
-      "readMinutes": "13",
-      "avatar": "https://source.unsplash.com/random/800x600/?researcher",
-      "author": "ARInnovator",
-      "date": "2024-05-30",
-      "title": "The Evolution of Augmented Reality: Transforming How We Interact",
-      "description": "Witness the evolution of augmented reality and its impact on gaming, education, and everyday experiences, blending the virtual and real worlds.",
-      "id": "cc67a9a6-9854-48e4-a474-3134033d8c82",
-      "photo": "https://source.unsplash.com/random/800x600/?future"
-    },
-    {
-      "readMinutes": "26",
-      "avatar": "https://source.unsplash.com/random/800x600/?representative",
-      "author": "BioMedInnovator",
-      "date": "2024-06-25",
-      "title": "The Future of Biomedical Engineering: Enhancing Healthcare",
-      "description": "Delve into the world of biomedical engineering and its role in developing cutting-edge medical devices, prosthetics, and health technologies.",
-      "id": "ddf59416-7a1f-409d-ad21-14e4fdc37dda",
-      "photo": "https://source.unsplash.com/random/800x600/?biomedical"
-    },
-    {
-      "id": "846c122a-f5da-4777-802e-1751ae6afe9a",
-      "title": "5G Revolution: Transforming Connectivity",
-      "description": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication.",
-      "author": "5GInnovator",
-      "avatar": "https://source.unsplash.com/random/800x600/?officer",
-      "date": "2024-03-25",
-      "comments": [],
-      "photo": "https://source.unsplash.com/random/800x600/?5g",
-      "readMinutes": "27",
-      "category": "5g",
-      "article": "Experience the transformative impact of 5G technology on connectivity, enabling faster internet speeds, low latency, and unprecedented communication.",
-      "saved": []
-    }
-  ],
+  "user_2ZwvcapagNGQqVQNgVIjKCNABs2": [],
   "user_2a28DvvkvTL3xBpUV89QIQRrZS3": [
     {
       "readMinutes": "9",

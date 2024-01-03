@@ -23,6 +23,12 @@ export default async function getNews(req, res) {
   };
 
   try {
+    // Handle pre-flight requests
+    if (req.method === 'OPTIONS') {
+      res.status(200).end();
+      return;
+    }
+
     const newsData = await readNewsFile();
 
     if (req.method === "GET") {

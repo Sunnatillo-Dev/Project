@@ -8,12 +8,7 @@ import DynamicContext from "@/Context/dynamic";
 export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <ClerkProvider
-        {...pageProps}
-        publishableKey={
-          "pk_test_dWx0aW1hdGUtbGFkeWJ1Zy00Ni5jbGVyay5hY2NvdW50cy5kZXYk"
-        }
-      >
+      <ClerkProvider {...pageProps}>
         <DynamicContext>
           <Layout>
             <Component {...pageProps} />

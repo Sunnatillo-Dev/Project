@@ -41,9 +41,9 @@ let Guest = () => {
           position={"absolute"}
           right={0}
           top={"5%"}
-          bottom={"10%"}
+          bottom={"5%"}
           fontSize={"25px"}
-          maxW={"500px"}
+          maxW={"600px"}
         >
           M&nbsp;M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;M&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;M&nbsp;M&nbsp;M&nbsp;M
           M&nbsp;M&nbsp;M
