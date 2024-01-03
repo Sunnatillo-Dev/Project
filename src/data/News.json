@@ -1,5 +1,41 @@
 [
   {
+    "title": "asdasd",
+    "description": "adsasd",
+    "readMinutes": "22",
+    "photo": " https://source.unsplash.com/random/?wwa",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2024-01-03",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "future",
+    "article": "dasdasd",
+    "id": "8db7cef1-2bea-4f06-9b77-fcedc05f94ef"
+  },
+  {
+    "title": "sadas",
+    "description": "jh",
+    "readMinutes": "2",
+    "photo": " https://source.unsplash.com/random/?jh",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2024-01-03",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "crypto",
+    "article": "jh",
+    "id": "584e09e0-5d7d-4375-a3ff-bf6ebc99c071"
+  },
+  {
+    "title": "asdasdasasdasd",
+    "description": "asdas",
+    "readMinutes": "21212",
+    "photo": " https://source.unsplash.com/random/?panda",
+    "author": "Sunnatillo Ro'zmetov",
+    "date": "2024-01-03",
+    "avatar": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWnd2Y2daNll1RVJ4NEdJM0NoR0x0MW1KVFcifQ",
+    "category": "crypto",
+    "article": "adasasdasd",
+    "id": "b8dc1a97-da44-439f-ab47-c5579277cb25"
+  },
+  {
     "title": "11",
     "description": "11",
     "readMinutes": "111",
